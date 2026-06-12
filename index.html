@@ -400,6 +400,32 @@
     .src-link { font-size: 0.65rem; color: var(--accent-blue); vertical-align: super; text-decoration: none; }
     .hidden { display: none !important; }
 
+    /* ─────────── ICON SYSTEM (replaces emoji) ─────────── */
+    .ico { width: 1em; height: 1em; display: inline-block; vertical-align: -0.14em; flex-shrink: 0; }
+    .ui-icon { display: inline-flex; align-items: center; justify-content: center; line-height: 0; }
+    .prov-mark {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 30px; height: 30px; border-radius: 8px; color: #fff;
+      font-weight: 800; font-size: 0.72rem; letter-spacing: 0.01em; flex-shrink: 0;
+      vertical-align: middle; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12);
+    }
+    .prov-mark--sm { width: 26px; height: 26px; font-size: 0.66rem; border-radius: 7px; }
+    .prov-mark--lg { width: 38px; height: 38px; font-size: 0.9rem; border-radius: 9px; }
+    .ico-ok { color: var(--accent-green); }
+    .ico-ko { color: var(--accent-red); }
+    /* icon alignment in components */
+    .cat-tile__icon, .intent-tile__icon { color: var(--accent); }
+    .filter-btn { display: inline-flex; align-items: center; gap: 0.35rem; }
+    .audience-toggle button { display: inline-flex; align-items: center; gap: 0.35rem; }
+    .verdict__cols li { display: flex; align-items: flex-start; gap: 0.45rem; }
+    .verdict__cols li .ico { margin-top: 0.1em; }
+    .verdict__badge { display: inline-flex; align-items: center; gap: 0.35rem; }
+    .verdict__tie { display: flex; align-items: center; gap: 0.45rem; font-size: 0.82rem; color: var(--text-secondary); background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 0.45rem 0.65rem; margin-bottom: 0.9rem; }
+    .verdict__tie .ico { color: var(--accent); flex-shrink: 0; }
+    .win-badge { display: inline-flex; align-items: center; justify-content: center; gap: 0.25rem; }
+    .cmp-prov__yours { display: inline-flex; align-items: center; justify-content: center; gap: 0.3rem; margin-top: auto; color: var(--accent-dark); font-weight: 800; font-size: 0.78rem; padding: 0.4rem 0; }
+    [data-theme="dark"] .cmp-prov__yours { color: var(--accent-light); }
+
     /* ─────────── DECISION ENGINE: shortlist + compare ─────────── */
     .cmp-check-cell { text-align: center; width: 44px; }
     .cmp-check { width: 17px; height: 17px; cursor: pointer; accent-color: var(--accent); }
@@ -500,7 +526,7 @@
 <body>
   <!-- ═══════════ PROMO BAR ═══════════ -->
   <div class="promo-bar" id="promo-bar">
-    🏆 Top editorial pick: <strong id="promo-top">—</strong> · Independent scoring, no paid rankings
+    <span class="ui-icon" data-icon="award" style="color:var(--accent);vertical-align:-0.15em"></span> Top editorial pick: <strong id="promo-top">—</strong> · Independent scoring, no paid rankings
   </div>
 
   <!-- ═══════════ NAV ═══════════ -->
@@ -515,7 +541,7 @@
         <a href="#scorecards" class="nav__mobile-hide">Reviews</a>
         <a href="/methodology" class="nav__mobile-hide">Methodology</a>
         <a href="/about" class="nav__mobile-hide">About</a>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
         <a href="#quiz-section" class="btn btn--primary btn--sm">Start matching →</a>
       </div>
     </div>
@@ -525,7 +551,7 @@
   <header class="hero">
     <div class="wrap hero__grid">
       <div>
-        <div class="hero__badge"><span class="ic">🛡️</span> Independent. Renewal-price aware. No paid rankings.</div>
+        <div class="hero__badge"><span class="ic ui-icon" data-icon="shield"></span> Independent. Renewal-price aware. No paid rankings.</div>
         <h1>Find the perfect hosting<br>for <span class="accent">your website.</span></h1>
         <p class="hero__sub">We compare 22 hosting providers across performance, uptime, support, features, security, ease of use, scalability, and real renewal cost — so you get the right fit, not the loudest ad.</p>
         <div class="hero__ctas">
@@ -533,10 +559,10 @@
           <a href="#scorecards" class="btn btn--ghost">▷ See how we score</a>
         </div>
         <div class="proof-row">
-          <span class="it"><span class="ic">✓</span> 22 hosts analysed</span><span class="sep">|</span>
-          <span class="it"><span class="ic">✓</span> Renewal prices checked</span><span class="sep">|</span>
-          <span class="it"><span class="ic">✓</span> 8-factor scoring</span><span class="sep">|</span>
-          <span class="it"><span class="ic">✓</span> 100% independent</span>
+          <span class="it"><span class="ic ui-icon" data-icon="check"></span> 22 hosts analysed</span><span class="sep">|</span>
+          <span class="it"><span class="ic ui-icon" data-icon="check"></span> Renewal prices checked</span><span class="sep">|</span>
+          <span class="it"><span class="ic ui-icon" data-icon="check"></span> 8-factor scoring</span><span class="sep">|</span>
+          <span class="it"><span class="ic ui-icon" data-icon="check"></span> 100% independent</span>
         </div>
       </div>
       <div class="hero__art">
@@ -581,14 +607,14 @@
         <div class="check-panel">
           <div class="check-panel__title">What we score</div>
           <div class="check-list">
-            <div class="check-row"><span class="ck">✓</span> Speed</div>
-            <div class="check-row"><span class="ck">✓</span> Uptime</div>
-            <div class="check-row"><span class="ck">✓</span> Support</div>
-            <div class="check-row"><span class="ck">✓</span> Features</div>
-            <div class="check-row"><span class="ck">✓</span> Value</div>
-            <div class="check-row"><span class="ck">✓</span> Security</div>
-            <div class="check-row"><span class="ck">✓</span> Ease of use</div>
-            <div class="check-row"><span class="ck">✓</span> Scalability</div>
+            <div class="check-row"><span class="ck ui-icon" data-icon="check"></span> Speed</div>
+            <div class="check-row"><span class="ck ui-icon" data-icon="check"></span> Uptime</div>
+            <div class="check-row"><span class="ck ui-icon" data-icon="check"></span> Support</div>
+            <div class="check-row"><span class="ck ui-icon" data-icon="check"></span> Features</div>
+            <div class="check-row"><span class="ck ui-icon" data-icon="check"></span> Value</div>
+            <div class="check-row"><span class="ck ui-icon" data-icon="check"></span> Security</div>
+            <div class="check-row"><span class="ck ui-icon" data-icon="check"></span> Ease of use</div>
+            <div class="check-row"><span class="ck ui-icon" data-icon="check"></span> Scalability</div>
           </div>
         </div>
       </div>
@@ -602,22 +628,22 @@
       <p class="section__sub" style="text-align:center">Pick your priority and we'll show you the best hosts for it.</p>
       <div class="intent-tiles">
         <button class="intent-tile" data-intent="performance">
-          <div class="intent-tile__icon">🚀</div><div class="intent-tile__name">Performance</div><div class="intent-tile__desc">Fast &amp; reliable</div>
+          <div class="intent-tile__icon ui-icon" data-icon="zap"></div><div class="intent-tile__name">Performance</div><div class="intent-tile__desc">Fast &amp; reliable</div>
         </button>
         <button class="intent-tile" data-intent="wordpress">
-          <div class="intent-tile__icon">📝</div><div class="intent-tile__name">WordPress</div><div class="intent-tile__desc">Optimised hosting</div>
+          <div class="intent-tile__icon ui-icon" data-icon="pen"></div><div class="intent-tile__name">WordPress</div><div class="intent-tile__desc">Optimised hosting</div>
         </button>
         <button class="intent-tile" data-intent="budget">
-          <div class="intent-tile__icon">💰</div><div class="intent-tile__name">Budget</div><div class="intent-tile__desc">Best value plans</div>
+          <div class="intent-tile__icon ui-icon" data-icon="tag"></div><div class="intent-tile__name">Budget</div><div class="intent-tile__desc">Best value plans</div>
         </button>
         <button class="intent-tile" data-intent="ecommerce">
-          <div class="intent-tile__icon">🛍️</div><div class="intent-tile__name">eCommerce</div><div class="intent-tile__desc">Sell with confidence</div>
+          <div class="intent-tile__icon ui-icon" data-icon="cart"></div><div class="intent-tile__name">eCommerce</div><div class="intent-tile__desc">Sell with confidence</div>
         </button>
         <button class="intent-tile" data-intent="developer">
-          <div class="intent-tile__icon">⌨️</div><div class="intent-tile__name">Developer</div><div class="intent-tile__desc">Dev tools &amp; control</div>
+          <div class="intent-tile__icon ui-icon" data-icon="code"></div><div class="intent-tile__name">Developer</div><div class="intent-tile__desc">Dev tools &amp; control</div>
         </button>
         <button class="intent-tile" data-intent="security">
-          <div class="intent-tile__icon">🛡️</div><div class="intent-tile__name">Security</div><div class="intent-tile__desc">Keep your site safe</div>
+          <div class="intent-tile__icon ui-icon" data-icon="shield"></div><div class="intent-tile__name">Security</div><div class="intent-tile__desc">Keep your site safe</div>
         </button>
       </div>
     </div>
@@ -630,27 +656,27 @@
       <p class="section__sub">Click a category to filter the comparison — or read the plain-English explainer for each.</p>
       <div class="cat-tiles">
         <button class="cat-tile" data-cat="shared">
-          <div class="cat-tile__icon">🏠</div>
+          <div class="cat-tile__icon ui-icon" data-icon="home"></div>
           <div class="cat-tile__name">Shared Hosting</div>
           <div class="cat-tile__desc">Best for beginners, small blogs, low traffic. $2–5/mo.</div>
         </button>
         <button class="cat-tile" data-cat="wordpress">
-          <div class="cat-tile__icon">📝</div>
+          <div class="cat-tile__icon ui-icon" data-icon="pen"></div>
           <div class="cat-tile__name">WordPress Hosting</div>
           <div class="cat-tile__desc">Managed, optimised for WordPress & WooCommerce. $10–50/mo.</div>
         </button>
         <button class="cat-tile" data-cat="cloud">
-          <div class="cat-tile__icon">☁️</div>
+          <div class="cat-tile__icon ui-icon" data-icon="cloud"></div>
           <div class="cat-tile__name">Cloud Hosting</div>
           <div class="cat-tile__desc">Scalable, pay-as-you-go. Growing & variable traffic. $5–20/mo.</div>
         </button>
         <button class="cat-tile" data-cat="cloud">
-          <div class="cat-tile__icon">🔧</div>
+          <div class="cat-tile__icon ui-icon" data-icon="terminal"></div>
           <div class="cat-tile__name">VPS Hosting</div>
           <div class="cat-tile__desc">More control, dedicated resources. Developers. $5–50/mo.</div>
         </button>
         <button class="cat-tile" data-cat="dedicated">
-          <div class="cat-tile__icon">🏢</div>
+          <div class="cat-tile__icon ui-icon" data-icon="server"></div>
           <div class="cat-tile__name">Dedicated Hosting</div>
           <div class="cat-tile__desc">Entire server for your site. Enterprise. $80–500+/mo.</div>
         </button>
@@ -755,23 +781,23 @@
           <p class="section__sub" style="margin-bottom:0">Sortable. The <strong style="color:var(--accent-light)">True 3-Year Cost</strong> column shows what you actually pay — intro year plus two renewal years.</p>
         </div>
         <div class="audience-toggle" id="audience-toggle">
-          <button class="active" data-mode="beginner">👶 Beginner view</button>
-          <button data-mode="pro">👨‍💻 Pro view</button>
+          <button class="active" data-mode="beginner"><span class="ui-icon" data-icon="user"></span> Beginner view</button>
+          <button data-mode="pro"><span class="ui-icon" data-icon="code"></span> Pro view</button>
         </div>
       </div>
       <div class="filter-row" id="filter-row">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="shared">🏠 Shared</button>
-        <button class="filter-btn" data-filter="wordpress">📝 WordPress</button>
-        <button class="filter-btn" data-filter="cloud">☁️ Cloud/VPS</button>
-        <button class="filter-btn" data-filter="dedicated">🏢 Dedicated</button>
-        <button class="filter-btn" data-filter="beginner">👶 Beginners</button>
-        <button class="filter-btn" data-filter="developer">👨‍💻 Developers</button>
-        <button class="filter-btn" data-filter="budget">💰 Budget</button>
-        <button class="filter-btn" data-filter="ecommerce">🛍️ eCommerce</button>
-        <button class="filter-btn" data-filter="agency">🏢 Agencies</button>
-        <button class="filter-btn" data-filter="eco">🌿 Eco</button>
-        <button class="filter-btn" data-filter="staging">🔀 Staging</button>
+        <button class="filter-btn" data-filter="shared"><span class="ui-icon" data-icon="home"></span> Shared</button>
+        <button class="filter-btn" data-filter="wordpress"><span class="ui-icon" data-icon="pen"></span> WordPress</button>
+        <button class="filter-btn" data-filter="cloud"><span class="ui-icon" data-icon="cloud"></span> Cloud/VPS</button>
+        <button class="filter-btn" data-filter="dedicated"><span class="ui-icon" data-icon="server"></span> Dedicated</button>
+        <button class="filter-btn" data-filter="beginner"><span class="ui-icon" data-icon="user"></span> Beginners</button>
+        <button class="filter-btn" data-filter="developer"><span class="ui-icon" data-icon="code"></span> Developers</button>
+        <button class="filter-btn" data-filter="budget"><span class="ui-icon" data-icon="tag"></span> Budget</button>
+        <button class="filter-btn" data-filter="ecommerce"><span class="ui-icon" data-icon="cart"></span> eCommerce</button>
+        <button class="filter-btn" data-filter="agency"><span class="ui-icon" data-icon="users"></span> Agencies</button>
+        <button class="filter-btn" data-filter="eco"><span class="ui-icon" data-icon="leaf"></span> Eco</button>
+        <button class="filter-btn" data-filter="staging"><span class="ui-icon" data-icon="branch"></span> Staging</button>
       </div>
       <div class="table-scroll">
         <table class="compare">
@@ -782,7 +808,7 @@
               <th data-sort="score">Our Score <span class="tip">ⓘ<span class="tip__box">Weighted across 8 factors: Performance 25%, Uptime 20%, Price 20%, Support 15%, Security 10%, Ease 5%, Scalability 3%, Dev 2%.</span></span></th>
               <th data-sort="performance" class="pro-only">Performance <span class="tip">ⓘ<span class="tip__box">How fast your site loads. Based on TTFB, Core Web Vitals, and CDN.</span></span></th>
               <th data-sort="entry">Entry Price <span class="tip">ⓘ<span class="tip__box">Introductory price for the first term. Renewal rates are often higher.</span></span></th>
-              <th data-sort="renewal">Renewal <span class="tip">ⓘ<span class="tip__box">⚠️ What you pay after the first term. Many providers increase this significantly.</span></span></th>
+              <th data-sort="renewal">Renewal <span class="tip">ⓘ<span class="tip__box">What you pay after the first term. Many providers increase this significantly.</span></span></th>
               <th data-sort="truecost">True 3-Yr Cost <span class="tip">ⓘ<span class="tip__box">The real cost: 12 months at the intro price + 24 months at renewal. The number nobody else shows.</span></span></th>
               <th data-sort="uptime" class="pro-only">Uptime SLA <span class="tip">ⓘ<span class="tip__box">Guaranteed uptime. 99.9% = ~9 hours downtime per year.</span></span></th>
               <th class="pro-only">Support</th>
@@ -843,7 +869,7 @@
       </div>
 
       <div class="expander" data-exp>
-        <div class="expander__head">⚠️ The renewal price trap — read this before you buy <span class="chev">▶</span></div>
+        <div class="expander__head"><span class="ui-icon" data-icon="alert" style="color:var(--accent)"></span> The renewal price trap — read this before you buy <span class="chev">▶</span></div>
         <div class="expander__body">
           <p>Introductory prices are discounts to attract new customers. After the first term, you pay the standard (renewal) rate — often 3–8× higher. Hostinger's $2.99 becomes $9.99. SiteGround's $3.99 becomes $14.99.</p>
           <p>That's why our table shows the <strong style="color:var(--accent-light)">True 3-Year Cost</strong>: 12 months at the intro price plus 24 months at renewal. It's the single most honest number when comparing hosts.</p>
@@ -866,7 +892,7 @@
   <footer class="footer">
     <div class="wrap">
       <div class="footer__network">
-        🔗 Part of the Best Match network — building your own setup?
+        <span class="ui-icon" data-icon="link"></span> Part of the Best Match network — building your own setup?
         Compare <a href="https://bestvpsmatch.com">VPS providers</a> or
         <a href="https://bestvpnmatch.com">VPNs</a> too.
       </div>
@@ -955,11 +981,49 @@
       return ` <a class="src-link" href="${url}" target="_blank" rel="noopener noreferrer" title="Source">ⓘ</a>`;
     }
 
+    /* ── ICON SYSTEM (Feather/Lucide-style, currentColor) ── */
+    const ICON_PATHS = {
+      home: '<path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/>',
+      pen: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',
+      cloud: '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>',
+      terminal: '<polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/>',
+      server: '<rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><line x1="6" y1="6.5" x2="6.01" y2="6.5"/><line x1="6" y1="17.5" x2="6.01" y2="17.5"/>',
+      zap: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',
+      tag: '<path d="M20.59 13.41 13.42 20.6a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>',
+      cart: '<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>',
+      code: '<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>',
+      shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+      check: '<polyline points="20 6 9 17 4 12"/>',
+      x: '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
+      award: '<circle cx="12" cy="8" r="6"/><polyline points="8.5 13.5 7 22 12 19 17 22 15.5 13.5"/>',
+      scale: '<path d="M12 3v18"/><path d="M7 21h10"/><path d="M3 8l4-5 4 5a4 4 0 0 1-8 0z"/><path d="M13 8l4-5 4 5a4 4 0 0 1-8 0z"/><path d="M7 3h10"/>',
+      moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/>',
+      sun: '<circle cx="12" cy="12" r="4.5"/><line x1="12" y1="1.5" x2="12" y2="3.5"/><line x1="12" y1="20.5" x2="12" y2="22.5"/><line x1="3.5" y1="12" x2="1.5" y2="12"/><line x1="22.5" y1="12" x2="20.5" y2="12"/><line x1="5.6" y1="5.6" x2="4.2" y2="4.2"/><line x1="19.8" y1="19.8" x2="18.4" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/>',
+      link: '<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>',
+      alert: '<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><line x1="12" y1="17" x2="12.01" y2="17"/>',
+      user: '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+      users: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/>',
+      leaf: '<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/>',
+      branch: '<line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/>',
+      grid: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
+      phone: '<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.8.4 1.6.7 2.3a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.7-1.3a2 2 0 0 1 2.1-.4c.7.3 1.5.6 2.3.7a2 2 0 0 1 1.7 2z"/>'
+    };
+    function icon(name) {
+      const p = ICON_PATHS[name];
+      if (!p) return "";
+      return `<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+    }
+    function providerMark(v, size) {
+      const cls = size === "sm" ? " prov-mark--sm" : size === "lg" ? " prov-mark--lg" : "";
+      return `<span class="prov-mark${cls}" style="background:${v.brandColor}" aria-hidden="true">${v.mark}</span>`;
+    }
+
     /* ── THEME TOGGLE ── */
     const themeBtn = $("#theme-toggle");
     function syncThemeIcon() {
       const dark = document.documentElement.getAttribute("data-theme") === "dark";
-      themeBtn.textContent = dark ? "☀️" : "🌙";
+      themeBtn.innerHTML = icon(dark ? "sun" : "moon");
+      themeBtn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
     }
     syncThemeIcon();
     themeBtn.addEventListener("click", () => {
@@ -999,7 +1063,7 @@
             ${ribbon}
             <div class="scorecard__cat">${sc.label}</div>
             <div class="scorecard__head">
-              <span class="scorecard__icon">${v.logoIcon}</span>
+              ${providerMark(v)}
               <span class="scorecard__name">${v.name}</span>
               <span class="scorecard__score">${v.weightedScore}<small>/100</small></span>
             </div>
@@ -1060,7 +1124,7 @@
           </td>
           <td>
             <div class="prov-cell">
-              <span class="prov-cell__icon">${v.logoIcon}</span>
+              ${providerMark(v, "sm")}
               <div>
                 <div class="prov-cell__name">${v.name} <span class="cat-badge">${v.category}</span></div>
                 <div class="prov-cell__tag">${v.tagline}</div>
@@ -1073,7 +1137,7 @@
           <td><span class="price-renewal">${money(v.renewalPrice)}</span><small style="color:var(--text-muted)">/mo</small></td>
           <td class="true-cost">${moneyR(v.trueThreeYearCost)}<small>over 3 years</small></td>
           <td class="pro-only">${v.slaGuarantee}%</td>
-          <td class="pro-only">${v.support24_7 ? "24/7" : "Limited"}${(v.supportChannels||[]).includes("Phone") ? " 📞" : ""}</td>
+          <td class="pro-only">${v.support24_7 ? "24/7" : "Limited"}${(v.supportChannels||[]).includes("Phone") ? " " + icon("phone") : ""}</td>
           <td style="white-space:normal;max-width:160px;font-size:0.8rem;color:var(--text-secondary)">${v.bestFor}</td>
           <td><a href="${v.affiliateLink}" target="_blank" rel="${outboundRel()}" class="btn btn--primary btn--sm">Visit →</a></td>
         </tr>`).join("");
@@ -1190,7 +1254,7 @@
           ${top3.map(v => `
             <div class="scorecard">
               <div class="scorecard__head">
-                <span class="scorecard__icon">${v.logoIcon}</span>
+                ${providerMark(v)}
                 <span class="scorecard__name">${v.name}</span>
                 <span class="scorecard__score">${v.weightedScore}<small>/100</small></span>
               </div>
@@ -1323,7 +1387,7 @@
       $("#tray-count").textContent = "Selected: " + shortlist.length;
       $("#tray-chips").innerHTML = shortlist.map(id => {
         const v = findV(id);
-        return `<span class="tray-chip">${v.logoIcon} ${v.name}<button class="tray-chip__x" data-remove="${id}" aria-label="Remove ${v.name}">×</button></span>`;
+        return `<span class="tray-chip">${providerMark(v, "sm")} ${v.name}<button class="tray-chip__x" data-remove="${id}" aria-label="Remove ${v.name}">×</button></span>`;
       }).join("");
       $("#tray-hint").innerHTML = shortlist.length === 1 ? `<span class="tray-hint">Select 1 more to compare</span>` : "";
       const cmp = $("#tray-compare");
@@ -1396,15 +1460,15 @@
       const str = strengthsOf(winner, set), tos = tradeoffsOf(winner, set);
       const tie = tieExplanation(winner, set);
       const toHtml = tos.length
-        ? tos.map(x => `<li class="ko">❌ ${x}</li>`).join("")
-        : `<li class="ok">✅ No major trade-offs vs your shortlist</li>`;
+        ? tos.map(x => `<li class="ko"><span class="ico-ko">${icon("x")}</span> ${x}</li>`).join("")
+        : `<li class="ok"><span class="ico-ok">${icon("check")}</span> No major trade-offs vs your shortlist</li>`;
       const verdict = `
         <div class="verdict">
-          <div class="verdict__badge">🥇 Best match of your shortlist</div>
-          <div class="verdict__name">${winner.logoIcon} ${winner.name} <span class="verdict__score">${winner.weightedScore}<small>/100</small></span></div>
-          ${tie ? `<div class="verdict__tie">⚖️ ${tie}</div>` : `<div class="verdict__sub">Top of your ${numWord(set.length)} on weighted score.</div>`}
+          <div class="verdict__badge">${icon("award")} Best match of your shortlist</div>
+          <div class="verdict__name">${providerMark(winner, "lg")} ${winner.name} <span class="verdict__score">${winner.weightedScore}<small>/100</small></span></div>
+          ${tie ? `<div class="verdict__tie">${icon("scale")} ${tie}</div>` : `<div class="verdict__sub">Top of your ${numWord(set.length)} on weighted score.</div>`}
           <div class="verdict__cols">
-            <div><div class="verdict__h">Strengths</div><ul>${str.map(s => `<li class="ok">✅ ${s}</li>`).join("")}</ul></div>
+            <div><div class="verdict__h">Strengths</div><ul>${str.map(s => `<li class="ok"><span class="ico-ok">${icon("check")}</span> ${s}</li>`).join("")}</ul></div>
             <div><div class="verdict__h">Trade-offs</div><ul>${toHtml}</ul></div>
           </div>
           <a class="btn btn--primary" href="${winner.affiliateLink}" target="_blank" rel="${outboundRel()}">Visit ${winner.name} →</a>
@@ -1412,11 +1476,11 @@
       const headCols = set.map((v, i) => `
         <th class="${i === wi ? "is-winner" : ""}">
           <div class="cmp-prov__head">
-            <div class="win-badge"${i === wi ? "" : ' style="visibility:hidden"'}>🥇 Best match</div>
-            <div class="cmp-prov">${v.logoIcon} <strong>${v.name}</strong></div>
+            <div class="win-badge"${i === wi ? "" : ' style="visibility:hidden"'}>${icon("award")} Best match</div>
+            <div class="cmp-prov">${providerMark(v)} <strong>${v.name}</strong></div>
             <div class="cmp-prov__score">${pill(v.weightedScore)}</div>
             ${i === wi
-              ? `<span class="cmp-prov__cta cmp-prov__yours">🥇 Your match</span>`
+              ? `<span class="cmp-prov__cta cmp-prov__yours">${icon("award")} Your match</span>`
               : `<a href="${v.affiliateLink}" target="_blank" rel="${outboundRel()}" class="btn btn--primary btn--sm cmp-prov__cta">Visit →</a>`}
           </div>
         </th>`).join("");
@@ -1502,6 +1566,7 @@
     }
 
     /* ── init ── */
+    $$("[data-icon]").forEach(el => { el.innerHTML = icon(el.getAttribute("data-icon")); });
     loadShortlist();
     renderScorecards();
     renderTable();

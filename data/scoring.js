@@ -10,6 +10,8 @@ function buildHosting(record) {
   const ws = calculateHostingScore(record);
   /* True 3-year cost: 12 months at entry price + 24 months at renewal price */
   const trueThreeYearCost = Math.round(record.entryPrice * 12 + record.renewalPrice * 24);
+  /* VISUAL ONLY — monogram + brand colour for the provider chip. No scoring effect. */
+  const pm = (typeof PROVIDER_MARKS !== "undefined" && PROVIDER_MARKS[id]) || null;
   return {
     ...record,
     savingsPct:         savings[0],
@@ -17,6 +19,8 @@ function buildHosting(record) {
     affiliateLink:      affiliateHref(id),
     weightedScore:      ws,
     trueThreeYearCost:  trueThreeYearCost,
+    mark:               pm ? pm[0] : (record.name || "?").slice(0, 2),
+    brandColor:         pm ? pm[1] : "#64748b",
     ranking:            0
   };
 }

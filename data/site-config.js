@@ -61,6 +61,34 @@ const HOSTING_SAVINGS = {
   ionosdedicated:[0,  65.00]
 };
 
+/* PROVIDER_MARKS — VISUAL ONLY. [monogram, brandColor] for the rounded-square
+   provider chips that replaced the emoji "logos". Has NO effect on scoring,
+   ranking, pricing, or affiliate logic — purely how the provider mark renders. */
+const PROVIDER_MARKS = {
+  hostinger:      ["Ho", "#673DE6"],
+  bluehost:       ["Bl", "#1C5BB8"],
+  dreamhost:      ["Dr", "#0A7CCB"],
+  siteground:     ["Sg", "#0A8A5F"],
+  ionos:          ["Io", "#1A3A6B"],
+  a2hosting:      ["A2", "#0E7C84"],
+  greengeeks:     ["Gg", "#3FA535"],
+  inmotion:       ["Im", "#1F6FB2"],
+  hostgator:      ["Hg", "#1F8FBF"],
+  namecheap:      ["Nc", "#D4202C"],
+  kinsta:         ["Ki", "#5333ED"],
+  wpengine:       ["WP", "#0B8C94"],
+  cloudways:      ["Cw", "#2E3C95"],
+  pressable:      ["Pr", "#1E6F93"],
+  rocketnet:      ["Ro", "#119DA4"],
+  flywheel:       ["Fw", "#1FA98C"],
+  digitalocean:   ["DO", "#0069FF"],
+  vultr:          ["Vu", "#2197F3"],
+  linode:         ["Li", "#00A95C"],
+  hetzner:        ["He", "#C0182C"],
+  liquidweb:      ["Lw", "#15497E"],
+  ionosdedicated: ["Io", "#1A3A6B"]
+};
+
 function affiliateHref(id) {
   if (SITE_CONFIG.affiliateActive && AFFILIATE_LINKS[id]) return AFFILIATE_LINKS[id];
   return HOSTING_HOME_LINKS[id] || "#";
