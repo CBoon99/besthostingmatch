@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Hosting Match — Find Your Perfect Web Host (2026)</title>
+  <meta name="description" content="Compare 22 web hosting providers across speed, uptime, price, and support. Shared, WordPress, cloud, VPS & dedicated. See the real 3-year cost — not just the intro price. Independent, no paid rankings.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://besthostingmatch.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Best Hosting Match — Find the Perfect Web Hosting in 30 Seconds">
+  <meta property="og:description" content="Compare 22 hosting providers across 8 weighted factors. See the real 3-year cost, not just the intro price. Built for beginners and pros alike.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://besthostingmatch.com/">
+  <meta property="og:image" content="https://besthostingmatch.com/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best Hosting Match — Find the Perfect Web Hosting in 30 Seconds">
+  <meta name="twitter:description" content="Compare 22 hosting providers. See the real 3-year cost, not just the intro price.">
+  <meta name="twitter:image" content="https://besthostingmatch.com/og-image.svg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Anti-flash theme script — MUST stay here, do not move or defer -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('hosting-theme');
+        if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Schema.org: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Best Hosting Match",
+    "url": "https://besthostingmatch.com/",
+    "description": "Independent web hosting comparison using 8-factor weighted editorial scoring.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://besthostingmatch.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <!-- Schema.org: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Best Hosting Match",
+    "url": "https://besthostingmatch.com/",
+    "description": "Independent web hosting comparison and editorial scoring."
+  }
+  </script>
+
+  <style>
+    /* ─────────── THEME TOKENS (light default) ─────────── */
+    :root {
+      --bg-dark: #fdfaf6;       /* warm off-white page background */
+      --bg-card: #ffffff;
+      --bg-elevated: #f7f3ec;
+      --bg-hover: #f0ebe2;
+      --text-primary: #14181f;  /* near-black navy */
+      --text-secondary: #515a67;
+      --text-muted: #99a0ab;
+      --accent: #f97316;        /* orange — used with restraint */
+      --accent-light: #fb923c;
+      --accent-dark: #ea580c;
+      --accent-dim: rgba(249,115,22,0.09);
+      --accent-blue: #3b82f6;
+      --accent-green: #10b981;
+      --accent-red: #ef4444;
+      --border: #ece5da;
+      --border-subtle: #f3ede4;
+      --radius: 12px;
+      --radius-lg: 16px;
+      --radius-sm: 7px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --shadow: 0 10px 40px rgba(20,24,31,0.06);
+      --maxw: 1180px;
+    }
+    [data-theme="dark"] {
+      --bg-dark: #0e1117;
+      --bg-card: #161b22;
+      --bg-elevated: #1c232d;
+      --bg-hover: #232c38;
+      --text-primary: #f4f6fb;
+      --text-secondary: #b8c2d0;
+      --text-muted: #7d8896;
+      --accent-dim: rgba(249,115,22,0.14);
+      --border: #2a323d;
+      --border-subtle: #222a34;
+      --shadow: 0 4px 24px rgba(0,0,0,0.35);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.2s, color 0.2s;
+    }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 1.2rem; }
+    section { padding: 3rem 0; }
+    h1, h2, h3 { line-height: 1.2; font-weight: 800; }
+    .section__title { font-size: 1.7rem; margin-bottom: 0.4rem; }
+    .section__sub { color: var(--text-secondary); margin-bottom: 1.6rem; font-size: 0.98rem; }
+
+    /* ─────────── BUTTONS ─────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-family: var(--font); font-weight: 700; font-size: 0.92rem;
+      padding: 0.7rem 1.3rem; border-radius: var(--radius); border: none;
+      cursor: pointer; transition: all 0.15s; text-decoration: none; white-space: nowrap;
+    }
+    .btn--primary { background: var(--accent); color: #fff; }
+    .btn--primary:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(249,115,22,0.4); text-decoration: none; }
+    .btn--secondary { background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border); }
+    .btn--secondary:hover { background: var(--bg-hover); text-decoration: none; }
+    .btn--ghost { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); }
+    .btn--ghost:hover { background: var(--bg-elevated); color: var(--text-primary); text-decoration: none; }
+    .btn--sm { font-size: 0.8rem; padding: 0.4rem 0.9rem; }
+
+    /* ─────────── NAV ─────────── */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--bg-dark) 88%, transparent);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .nav__logo { display: flex; align-items: center; gap: 0.5rem; font-weight: 900; font-size: 1.05rem; color: var(--text-primary); }
+    .nav__logo:hover { text-decoration: none; }
+    .nav__logo-mark {
+      width: 32px; height: 32px; flex-shrink: 0; font-size: 0; color: transparent;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='5' width='16' height='21' rx='4' fill='%23ffffff' stroke='%23fdba74' stroke-width='2'/%3E%3Crect x='12' y='7' width='16' height='21' rx='4' fill='%23f97316'/%3E%3Cpath d='M15.5 18.5 l2.8 2.8 l5.2 -6.2' fill='none' stroke='%23ffffff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
+    .nav__links { display: flex; align-items: center; gap: 1.3rem; }
+    .nav__links a { color: var(--text-secondary); font-size: 0.88rem; font-weight: 600; }
+    .nav__links a:hover { color: var(--text-primary); text-decoration: none; }
+    .theme-toggle { background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-primary); width: 36px; height: 36px; border-radius: 9px; cursor: pointer; font-size: 1rem; }
+    .nav__mobile-hide { }
+    @media (max-width: 760px) { .nav__links a.nav__mobile-hide { display: none; } }
+
+    /* ─────────── PROMO BAR ─────────── */
+    .promo-bar {
+      background: linear-gradient(90deg, var(--accent-dim), transparent);
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.82rem; color: var(--text-secondary); text-align: center; padding: 0.5rem 1rem;
+    }
+    .promo-bar strong { color: var(--accent-light); }
+
+    /* ─────────── HERO ─────────── */
+    .hero { padding: 3.4rem 0 2.6rem; position: relative; }
+    .hero__grid { display: grid; grid-template-columns: 1fr 0.92fr; gap: 2.4rem; align-items: center; }
+    .hero h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1rem; line-height: 1.08; }
+    .hero h1 .accent { color: var(--accent); }
+    .hero__sub { font-size: 1.08rem; color: var(--text-secondary); margin-bottom: 0; max-width: 48ch; }
+    .hero__types { font-size: 0.9rem; color: var(--text-muted); font-weight: 600; margin-bottom: 1.5rem; letter-spacing: 0.01em; }
+    .hero__search { display: flex; gap: 0.6rem; margin-bottom: 1rem; max-width: 460px; position: relative; }
+    .hero__search input {
+      flex: 1; padding: 0.85rem 1rem; border-radius: var(--radius);
+      border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary);
+      font-family: var(--font); font-size: 0.95rem;
+    }
+    .hero__search input:focus { outline: none; border-color: var(--accent); }
+    .hero__ctas { display: flex; gap: 0.7rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .hero__trust { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: 1.4rem; font-size: 0.82rem; color: var(--text-muted); }
+    .hero__art { display: grid; place-items: center; }
+    .hero__art svg { width: 100%; max-width: 360px; height: auto; }
+    @media (max-width: 860px) {
+      .hero__grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.2rem; }
+    }
+    /* calm trust badge (top of hero) */
+    .hero__badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--bg-card); border: 1px solid var(--border);
+      color: var(--text-secondary); font-weight: 600; font-size: 0.8rem;
+      padding: 0.4rem 0.9rem; border-radius: 999px; margin-bottom: 1.3rem;
+      box-shadow: var(--shadow);
+    }
+    .hero__badge .ic { color: var(--accent); display: inline-flex; }
+    /* small proof row */
+    .proof-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem 0.9rem; margin-top: 1.5rem; font-size: 0.8rem; color: var(--text-secondary); font-weight: 600; }
+    .proof-row .it { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .proof-row .it .ic { color: var(--accent); }
+    .proof-row .sep { color: var(--border); }
+    @media (max-width: 520px) { .proof-row .sep { display: none; } }
+    /* hero right: server visual + floating checklist */
+    .hero__art { position: relative; }
+    .server-visual { width: 100%; max-width: 420px; height: auto; display: block; }
+    .check-panel {
+      position: absolute; top: 50%; right: -6px; transform: translateY(-50%);
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 1.1rem 1.25rem; box-shadow: var(--shadow); min-width: 168px;
+    }
+    .check-panel__title { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.7rem; }
+    .check-list { display: grid; gap: 0.5rem; }
+    .check-row { display: flex; align-items: center; gap: 0.55rem; font-size: 0.85rem; font-weight: 600; color: var(--text-primary); }
+    .check-row .ck {
+      width: 17px; height: 17px; border-radius: 50%; flex-shrink: 0;
+      background: var(--accent-dim); color: var(--accent); display: grid; place-items: center;
+      font-size: 0.62rem; font-weight: 900;
+    }
+    @media (max-width: 1040px) { .check-panel { position: static; transform: none; margin: 1rem auto 0; right: auto; } }
+    @media (max-width: 860px) { .hero__art { display: none; } }
+    /* intent tiles */
+    .intent-tiles { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.7rem; }
+    @media (max-width: 900px) { .intent-tiles { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 520px) { .intent-tiles { grid-template-columns: repeat(2, 1fr); } }
+    .intent-tile {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 1.1rem 0.9rem; cursor: pointer; transition: all 0.15s; text-align: center;
+    }
+    .intent-tile:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow); }
+    .intent-tile__icon { font-size: 1.5rem; margin-bottom: 0.45rem; }
+    .intent-tile__name { font-weight: 800; font-size: 0.9rem; margin-bottom: 0.2rem; }
+    .intent-tile__desc { font-size: 0.72rem; color: var(--text-muted); line-height: 1.35; }
+    /* head-to-head comparison chips */
+    .vs-links { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .vs-links a {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 999px;
+      padding: 0.5rem 1.05rem; font-weight: 600; font-size: 0.88rem; color: var(--text-primary);
+      transition: all 0.13s;
+    }
+    .vs-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; transform: translateY(-1px); }
+
+    /* ─────────── CATEGORY TILES ─────────── */
+    .cat-tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.8rem; }
+    @media (max-width: 900px) { .cat-tiles { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .cat-tiles { grid-template-columns: 1fr; } }
+    .cat-tile {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 1.1rem; cursor: pointer; transition: all 0.15s; text-align: left;
+    }
+    .cat-tile:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow); }
+    .cat-tile__icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .cat-tile__name { font-weight: 800; font-size: 0.98rem; margin-bottom: 0.25rem; }
+    .cat-tile__desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+
+    /* ─────────── AUDIENCE TOGGLE ─────────── */
+    .audience-toggle {
+      display: inline-flex; background: var(--bg-elevated); border: 1px solid var(--border);
+      border-radius: 999px; padding: 0.25rem; gap: 0.2rem;
+    }
+    .audience-toggle button {
+      border: none; background: transparent; color: var(--text-secondary);
+      font-family: var(--font); font-weight: 700; font-size: 0.82rem;
+      padding: 0.4rem 1rem; border-radius: 999px; cursor: pointer; transition: all 0.15s;
+    }
+    .audience-toggle button.active { background: var(--accent); color: #fff; }
+
+    /* ─────────── EXPANDABLE / DETAILS ─────────── */
+    .expander { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); margin-bottom: 0.8rem; overflow: hidden; }
+    .expander__head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.2rem; cursor: pointer; font-weight: 700; font-size: 0.98rem;
+    }
+    .expander__head:hover { background: var(--bg-hover); }
+    .expander__head .chev { color: var(--accent); transition: transform 0.2s; font-size: 0.9rem; }
+    .expander.open .chev { transform: rotate(90deg); }
+    .expander__body { padding: 0 1.2rem; max-height: 0; overflow: hidden; transition: max-height 0.25s, padding 0.25s; color: var(--text-secondary); font-size: 0.92rem; }
+    .expander.open .expander__body { padding: 0 1.2rem 1.2rem; max-height: 1200px; }
+    .expander__body p { margin-bottom: 0.7rem; }
+    .expander__body table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.84rem; }
+    .expander__body th, .expander__body td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border-subtle); }
+    .expander__body th { color: var(--text-primary); font-weight: 700; }
+
+    /* ─────────── TOOLTIP ─────────── */
+    .tip { position: relative; cursor: help; border-bottom: 1px dotted var(--text-muted); }
+    .tip .tip__box {
+      visibility: hidden; opacity: 0; position: absolute; bottom: 135%; left: 50%; transform: translateX(-50%);
+      background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border);
+      padding: 0.55rem 0.7rem; border-radius: 8px; font-size: 0.74rem; font-weight: 500;
+      width: 210px; z-index: 60; box-shadow: var(--shadow); transition: opacity 0.15s; line-height: 1.4;
+    }
+    .tip:hover .tip__box { visibility: visible; opacity: 1; }
+
+    /* ─────────── SCORE PILL ─────────── */
+    .score-pill { display: inline-flex; align-items: baseline; gap: 0.1rem; font-weight: 800; font-size: 0.9rem; padding: 0.2rem 0.55rem; border-radius: 999px; }
+    .score-pill span { font-size: 0.68rem; font-weight: 400; color: var(--text-muted); }
+    .score-pill--exceptional { background: rgba(249,115,22,0.14); color: var(--accent-light); border: 1px solid rgba(249,115,22,0.3); }
+    .score-pill--excellent   { background: rgba(16,185,129,0.12); color: #34d399; border: 1px solid rgba(16,185,129,0.25); }
+    .score-pill--good        { background: rgba(59,130,246,0.12); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
+    .score-pill--fair        { background: rgba(125,136,150,0.12); color: var(--text-secondary); border: 1px solid var(--border); }
+
+    /* ─────────── TABLE ─────────── */
+    .table-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 1rem; justify-content: space-between; }
+    .filter-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+    .filter-btn {
+      background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary);
+      font-family: var(--font); font-weight: 600; font-size: 0.78rem; padding: 0.4rem 0.8rem;
+      border-radius: 999px; cursor: pointer; transition: all 0.13s;
+    }
+    .filter-btn:hover, .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    table.compare { width: 100%; border-collapse: collapse; font-size: 0.86rem; min-width: 820px; }
+    table.compare th, table.compare td { padding: 0.75rem 0.8rem; text-align: left; border-bottom: 1px solid var(--border-subtle); white-space: nowrap; }
+    table.compare thead th { background: var(--bg-elevated); font-weight: 700; font-size: 0.78rem; color: var(--text-secondary); cursor: pointer; user-select: none; position: sticky; top: 0; }
+    table.compare thead th:hover { color: var(--text-primary); }
+    table.compare tbody tr:hover { background: var(--bg-hover); }
+    .prov-cell { display: flex; align-items: center; gap: 0.6rem; }
+    .prov-cell__icon { font-size: 1.3rem; }
+    .prov-cell__name { font-weight: 700; color: var(--text-primary); }
+    .prov-cell__tag { font-size: 0.72rem; color: var(--text-muted); white-space: normal; max-width: 200px; }
+    .price-renewal { color: var(--accent-red); font-weight: 700; }
+    .price-entry { color: var(--accent-green); font-weight: 700; }
+    .true-cost { font-weight: 800; color: var(--text-primary); }
+    .true-cost small { display: block; font-size: 0.66rem; color: var(--text-muted); font-weight: 400; }
+    .cat-badge { font-size: 0.68rem; font-weight: 700; padding: 0.15rem 0.45rem; border-radius: 999px; background: var(--accent-dim); color: var(--accent-light); text-transform: capitalize; }
+    .pro-only { display: none; }
+    body.pro-mode .pro-only { display: table-cell; }
+    body.pro-mode th.pro-only { display: table-cell; }
+
+    /* ─────────── SCORECARDS ─────────── */
+    .scorecards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1rem; }
+    .scorecard {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 1.1rem; position: relative; overflow: hidden;
+      display: flex; flex-direction: column; transition: all 0.15s;
+    }
+    .scorecard:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); }
+    .scorecard__ribbon {
+      position: absolute; top: 16px; right: -34px; width: 132px; text-align: center;
+      font-size: 0.55rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.22rem 0; transform: rotate(45deg); color: #fff; z-index: 1;
+      background: linear-gradient(90deg, #ea580c, var(--accent));
+    }
+    .scorecard__cat { font-size: 0.7rem; font-weight: 700; color: var(--accent-light); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.4rem; }
+    .scorecard__head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem; padding-right: 2.5rem; }
+    .scorecard__icon { font-size: 1.5rem; }
+    .scorecard__name { font-size: 1.05rem; font-weight: 800; }
+    .scorecard__score { margin-left: auto; font-size: 1.1rem; font-weight: 900; color: var(--accent); }
+    .scorecard__score small { font-size: 0.65rem; color: var(--text-muted); font-weight: 400; }
+    .scorecard__tagline { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.7rem; }
+    .scorecard__metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem 0.7rem; margin-bottom: 0.75rem; }
+    .metric { display: flex; flex-direction: column; }
+    .metric__label { font-size: 0.66rem; color: var(--text-muted); font-weight: 600; }
+    .metric__val { font-size: 0.85rem; font-weight: 700; }
+    .scorecard__tags { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-bottom: 0.85rem; }
+    .tag-pill { font-size: 0.64rem; font-weight: 600; padding: 0.16rem 0.45rem; border-radius: 999px; background: var(--bg-elevated); color: var(--text-muted); border: 1px solid var(--border-subtle); }
+    .scorecard__cta { margin-top: auto; }
+    .scorecard__cta .btn { width: 100%; justify-content: center; }
+
+    /* ─────────── QUIZ ─────────── */
+    .quiz { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.8rem; max-width: 720px; margin: 0 auto; }
+    .quiz__step { display: none; }
+    .quiz__step.active { display: block; }
+    .quiz__q { font-size: 1.25rem; font-weight: 800; margin-bottom: 1.1rem; text-align: center; }
+    .quiz__opts { display: grid; gap: 0.6rem; }
+    .quiz__opt {
+      background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 0.9rem 1.1rem; cursor: pointer; font-weight: 600; font-size: 0.92rem; transition: all 0.13s; text-align: left;
+    }
+    .quiz__opt:hover { border-color: var(--accent); background: var(--bg-hover); }
+    .quiz__progress { display: flex; gap: 0.3rem; justify-content: center; margin-bottom: 1.3rem; }
+    .quiz__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); }
+    .quiz__dot.active { background: var(--accent); }
+    .quiz__result { display: none; }
+    .quiz__result.active { display: block; }
+
+    /* ─────────── FAQ ─────────── */
+    .faq-item { border-bottom: 1px solid var(--border-subtle); }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; cursor: pointer; font-weight: 700; font-size: 1rem; }
+    .faq-q .chev { color: var(--accent); transition: transform 0.2s; }
+    .faq-item.open .chev { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.25s; color: var(--text-secondary); font-size: 0.92rem; }
+    .faq-item.open .faq-a { max-height: 400px; padding-bottom: 1rem; }
+
+    /* ─────────── FOOTER ─────────── */
+    .footer { border-top: 1px solid var(--border); background: var(--bg-card); padding: 2.5rem 0 1.5rem; margin-top: 2rem; }
+    .footer__grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 1.4rem 1.2rem; margin-bottom: 1.8rem; }
+    @media (max-width: 760px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
+    .footer__col h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 0.65rem; font-weight: 700; }
+    .footer__col a { display: block; color: var(--text-primary); font-size: 0.8rem; font-weight: 500; margin-bottom: 0.3rem; line-height: 1.45; }
+    .footer__col a:hover { color: var(--accent); text-decoration: none; }
+    .footer__brand p { font-size: 0.84rem; color: var(--text-muted); margin-top: 0.6rem; max-width: 30ch; }
+    .footer__network { background: var(--accent-dim); border: 1px solid rgba(249,115,22,0.2); border-radius: var(--radius); padding: 0.8rem 1rem; margin-bottom: 1.5rem; font-size: 0.84rem; color: var(--text-secondary); }
+    .footer__network a { font-weight: 700; }
+    .footer__bottom { text-align: center; font-size: 0.78rem; color: var(--text-muted); padding-top: 1.2rem; border-top: 1px solid var(--border-subtle); }
+
+    /* ─────────── MISC ─────────── */
+    .badge-row { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1rem; }
+    .src-link { font-size: 0.65rem; color: var(--accent-blue); vertical-align: super; text-decoration: none; }
+    .hidden { display: none !important; }
+
+    /* ─────────── DECISION ENGINE: shortlist + compare ─────────── */
+    .cmp-check-cell { text-align: center; width: 44px; }
+    .cmp-check { width: 17px; height: 17px; cursor: pointer; accent-color: var(--accent); }
+    .cmp-check:disabled { cursor: not-allowed; opacity: 0.4; }
+    .compare-btn {
+      font-family: var(--font); font-weight: 700; font-size: 0.74rem; padding: 0.42rem 0.7rem;
+      border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg-elevated);
+      color: var(--text-secondary); cursor: pointer; transition: all 0.13s; white-space: nowrap;
+    }
+    .compare-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .compare-btn.is-checked { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .compare-btn.is-disabled { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
+    .scorecard__cta { display: flex; gap: 0.4rem; align-items: center; }
+    .scorecard__cta .btn { flex: 1; justify-content: center; }
+
+    /* shortlist tray */
+    .shortlist-tray {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 80;
+      background: var(--bg-card); border-top: 1px solid var(--border);
+      box-shadow: 0 -8px 30px rgba(20,24,31,0.10); transform: translateY(100%); transition: transform 0.22s;
+    }
+    .shortlist-tray.show { transform: translateY(0); }
+    body.tray-open { padding-bottom: 80px; }
+    .shortlist-tray__inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.7rem 1.2rem; flex-wrap: wrap; }
+    .shortlist-tray__left { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; min-width: 0; }
+    .tray-count { font-weight: 800; font-size: 0.85rem; white-space: nowrap; }
+    .tray-chips { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .tray-chip { display: inline-flex; align-items: center; gap: 0.3rem; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 999px; padding: 0.22rem 0.3rem 0.22rem 0.6rem; font-size: 0.8rem; font-weight: 600; }
+    .tray-chip__x { border: none; background: none; color: var(--text-muted); cursor: pointer; font-size: 1rem; line-height: 1; padding: 0 0.2rem; border-radius: 50%; }
+    .tray-chip__x:hover { color: var(--accent-red); }
+    .tray-hint { font-size: 0.78rem; color: var(--text-muted); }
+    .shortlist-tray__right { display: flex; gap: 0.5rem; align-items: center; }
+    #tray-compare.is-disabled, #tray-compare:disabled { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
+    @media (max-width: 640px) {
+      .shortlist-tray__inner { padding: 0.6rem 0.9rem; }
+      .tray-chips { max-width: 100%; overflow-x: auto; flex-wrap: nowrap; }
+    }
+
+    /* compare modal */
+    body.modal-open { overflow: hidden; }
+    .cmp-modal { position: fixed; inset: 0; z-index: 120; display: flex; align-items: flex-start; justify-content: center; padding: 2.5rem 1rem; }
+    .cmp-modal[hidden] { display: none; }
+    .cmp-modal__backdrop { position: absolute; inset: 0; background: rgba(15,18,24,0.55); }
+    .cmp-modal__panel { position: relative; z-index: 1; background: var(--bg-dark); border: 1px solid var(--border); border-radius: var(--radius-lg); max-width: 1000px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.3); padding: 1.4rem; }
+    .cmp-modal__close { position: absolute; top: 0.8rem; right: 0.9rem; background: var(--bg-elevated); border: 1px solid var(--border); width: 32px; height: 32px; border-radius: 8px; cursor: pointer; font-size: 1.1rem; color: var(--text-primary); z-index: 2; }
+
+    /* verdict block */
+    .verdict { background: var(--accent-dim); border: 1px solid rgba(249,115,22,0.25); border-radius: var(--radius-lg); padding: 1rem 1.15rem; margin: 0.2rem 0 1.1rem; }
+    .verdict__badge { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-dark); }
+    [data-theme="dark"] .verdict__badge { color: var(--accent-light); }
+    .verdict__name { font-size: 1.3rem; font-weight: 900; margin: 0.1rem 0 0.15rem; display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
+    .verdict__score { font-size: 0.95rem; font-weight: 800; color: var(--accent-dark); }
+    [data-theme="dark"] .verdict__score { color: var(--accent-light); }
+    .verdict__score small { font-size: 0.65rem; font-weight: 400; color: var(--text-muted); }
+    .verdict__sub, .verdict__tie { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.8rem; }
+    .verdict__tie { font-weight: 600; }
+    .verdict__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem 1.4rem; margin-bottom: 0.9rem; }
+    @media (max-width: 560px) { .verdict__cols { grid-template-columns: 1fr; } }
+    .verdict__h { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 0.35rem; }
+    .verdict__cols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3rem; }
+    .verdict__cols li { font-size: 0.86rem; font-weight: 600; }
+    .verdict__cols li.ok { color: var(--text-primary); }
+    .verdict__cols li.ko { color: var(--text-secondary); }
+    .verdict .btn { padding: 0.55rem 1.1rem; }
+
+    /* compare grid */
+    table.cmp-grid { width: 100%; border-collapse: collapse; font-size: 0.84rem; table-layout: fixed; }
+    .cmp-grid th, .cmp-grid td { text-align: center; vertical-align: middle; padding: 0.7rem 0.6rem; border-bottom: 1px solid var(--border-subtle); }
+    .cmp-grid th + th, .cmp-grid td + td { border-left: 1px solid var(--border-subtle); }
+    .cmp-grid thead th { vertical-align: top; }
+    .cmp-grid td.cmp-rowlabel, .cmp-grid thead th:first-child { width: 24%; text-align: left; font-weight: 700; color: var(--text-secondary); font-size: 0.8rem; }
+    .cmp-grid td.is-winner, .cmp-grid th.is-winner { background: var(--accent-dim); }
+    .cmp-grid td.is-best { font-weight: 800; color: var(--text-primary); }
+    .cmp-grid .cmp-prov__head { display: flex; flex-direction: column; align-items: center; height: 100%; gap: 0.1rem; }
+    .cmp-grid .win-badge { min-height: 0.9rem; }
+    .cmp-grid .cmp-prov { font-size: 0.92rem; line-height: 1.25; }
+    .cmp-grid .cmp-prov__score { margin: 0.35rem 0; }
+    .cmp-grid .cmp-prov__cta { margin-top: auto; width: 100%; justify-content: center; }
+    .cmp-prov__yours { display: inline-flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 800; color: var(--accent-dark); background: rgba(249,115,22,0.14); border: 1px solid rgba(249,115,22,0.3); border-radius: 999px; padding: 0.4rem 0.6rem; }
+    [data-theme="dark"] .cmp-prov__yours { color: var(--accent-light); }
+    .cmp-grid thead th.is-winner { border-top: 2px solid var(--accent); }
+    .cmp-grid th.is-winner .cmp-prov strong { color: var(--accent-dark); }
+    [data-theme="dark"] .cmp-grid th.is-winner .cmp-prov strong { color: var(--accent-light); }
+    @media (max-width: 640px) {
+      table.cmp-grid { min-width: 480px; }
+      .cmp-grid td.cmp-rowlabel, .cmp-grid thead th:first-child { width: 120px; }
+    }
+    .win-badge { font-size: 0.62rem; font-weight: 800; color: var(--accent-dark); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.3rem; }
+    [data-theme="dark"] .win-badge { color: var(--accent-light); }
+    .cmp-prov { font-size: 0.9rem; }
+    .cmp-prov__score { margin: 0.3rem 0; }
+    tr.cmp-factor[hidden] { display: none; }
+    .checklist { list-style: none; display: grid; gap: 0.7rem; }
+    .checklist li { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.9rem; color: var(--text-secondary); }
+    .checklist li::before { content: "✓"; color: var(--accent-green); font-weight: 900; }
+  </style>
+</head>
+<body>
+  <!-- ═══════════ PROMO BAR ═══════════ -->
+  <div class="promo-bar" id="promo-bar">
+    🏆 Top editorial pick: <strong id="promo-top">—</strong> · Independent scoring, no paid rankings
+  </div>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <nav class="nav">
+    <div class="wrap nav__inner">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-mark">H</span> Best Hosting Match
+      </a>
+      <div class="nav__links">
+        <a href="#compare" class="nav__mobile-hide">Compare</a>
+        <a href="#guides" class="nav__mobile-hide">Guides</a>
+        <a href="#scorecards" class="nav__mobile-hide">Reviews</a>
+        <a href="/methodology" class="nav__mobile-hide">Methodology</a>
+        <a href="/about" class="nav__mobile-hide">About</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="#quiz-section" class="btn btn--primary btn--sm">Start matching →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <header class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <div class="hero__badge"><span class="ic">🛡️</span> Independent. Renewal-price aware. No paid rankings.</div>
+        <h1>Find the perfect hosting<br>for <span class="accent">your website.</span></h1>
+        <p class="hero__sub">We compare 22 hosting providers across performance, uptime, support, features, security, ease of use, scalability, and real renewal cost — so you get the right fit, not the loudest ad.</p>
+        <div class="hero__ctas">
+          <a href="#quiz-section" class="btn btn--primary">Start matching →</a>
+          <a href="#scorecards" class="btn btn--ghost">▷ See how we score</a>
+        </div>
+        <div class="proof-row">
+          <span class="it"><span class="ic">✓</span> 22 hosts analysed</span><span class="sep">|</span>
+          <span class="it"><span class="ic">✓</span> Renewal prices checked</span><span class="sep">|</span>
+          <span class="it"><span class="ic">✓</span> 8-factor scoring</span><span class="sep">|</span>
+          <span class="it"><span class="ic">✓</span> 100% independent</span>
+        </div>
+      </div>
+      <div class="hero__art">
+        <svg class="server-visual" viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isometric hosting server stack">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#f97316" stop-opacity="0.22"/>
+              <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f3ec"/></linearGradient>
+          </defs>
+          <ellipse cx="210" cy="372" rx="170" ry="40" fill="url(#glow)"/>
+          <!-- platform -->
+          <polygon points="70,290 210,360 210,378 70,308" fill="#e6ded1"/>
+          <polygon points="210,360 350,290 350,308 210,378" fill="#ddd4c5"/>
+          <polygon points="210,360 350,290 210,220 70,290" fill="#f1ece3"/>
+          <!-- unit A (bottom) -->
+          <polygon points="100,245 210,300 210,326 100,271" fill="#efe8dd"/>
+          <polygon points="210,300 320,245 320,271 210,326" fill="#e6ddcf"/>
+          <polygon points="210,300 320,245 210,190 100,245" fill="url(#top)" stroke="#ece5da"/>
+          <line x1="210" y1="300" x2="210" y2="326" stroke="#f97316" stroke-width="2"/>
+          <circle cx="238" cy="288" r="3.4" fill="#f97316"/><circle cx="252" cy="281" r="3.4" fill="#fdba74"/><circle cx="266" cy="274" r="3.4" fill="#10b981"/>
+          <!-- unit B -->
+          <polygon points="100,203 210,258 210,284 100,229" fill="#efe8dd"/>
+          <polygon points="210,258 320,203 320,229 210,284" fill="#e6ddcf"/>
+          <polygon points="210,258 320,203 210,148 100,203" fill="url(#top)" stroke="#ece5da"/>
+          <line x1="210" y1="258" x2="210" y2="284" stroke="#f97316" stroke-width="2"/>
+          <circle cx="238" cy="246" r="3.4" fill="#f97316"/><circle cx="252" cy="239" r="3.4" fill="#fdba74"/><circle cx="266" cy="232" r="3.4" fill="#10b981"/>
+          <!-- unit C -->
+          <polygon points="100,161 210,216 210,242 100,187" fill="#efe8dd"/>
+          <polygon points="210,216 320,161 320,187 210,242" fill="#e6ddcf"/>
+          <polygon points="210,216 320,161 210,106 100,161" fill="url(#top)" stroke="#ece5da"/>
+          <line x1="210" y1="216" x2="210" y2="242" stroke="#f97316" stroke-width="2"/>
+          <circle cx="238" cy="204" r="3.4" fill="#f97316"/><circle cx="252" cy="197" r="3.4" fill="#fdba74"/><circle cx="266" cy="190" r="3.4" fill="#10b981"/>
+          <!-- unit D (top) -->
+          <polygon points="100,119 210,174 210,200 100,145" fill="#efe8dd"/>
+          <polygon points="210,174 320,119 320,145 210,200" fill="#e6ddcf"/>
+          <polygon points="210,174 320,119 210,64 100,119" fill="url(#top)" stroke="#ece5da"/>
+          <line x1="210" y1="174" x2="210" y2="200" stroke="#f97316" stroke-width="2"/>
+          <circle cx="238" cy="162" r="3.4" fill="#f97316"/><circle cx="252" cy="155" r="3.4" fill="#fdba74"/><circle cx="266" cy="148" r="3.4" fill="#10b981"/>
+        </svg>
+        <div class="check-panel">
+          <div class="check-panel__title">What we score</div>
+          <div class="check-list">
+            <div class="check-row"><span class="ck">✓</span> Speed</div>
+            <div class="check-row"><span class="ck">✓</span> Uptime</div>
+            <div class="check-row"><span class="ck">✓</span> Support</div>
+            <div class="check-row"><span class="ck">✓</span> Features</div>
+            <div class="check-row"><span class="ck">✓</span> Value</div>
+            <div class="check-row"><span class="ck">✓</span> Security</div>
+            <div class="check-row"><span class="ck">✓</span> Ease of use</div>
+            <div class="check-row"><span class="ck">✓</span> Scalability</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════ INTENT TILES ═══════════ -->
+  <section id="intent" style="padding-top:1rem">
+    <div class="wrap">
+      <h2 class="section__title" style="text-align:center">What matters most to you?</h2>
+      <p class="section__sub" style="text-align:center">Pick your priority and we'll show you the best hosts for it.</p>
+      <div class="intent-tiles">
+        <button class="intent-tile" data-intent="performance">
+          <div class="intent-tile__icon">🚀</div><div class="intent-tile__name">Performance</div><div class="intent-tile__desc">Fast &amp; reliable</div>
+        </button>
+        <button class="intent-tile" data-intent="wordpress">
+          <div class="intent-tile__icon">📝</div><div class="intent-tile__name">WordPress</div><div class="intent-tile__desc">Optimised hosting</div>
+        </button>
+        <button class="intent-tile" data-intent="budget">
+          <div class="intent-tile__icon">💰</div><div class="intent-tile__name">Budget</div><div class="intent-tile__desc">Best value plans</div>
+        </button>
+        <button class="intent-tile" data-intent="ecommerce">
+          <div class="intent-tile__icon">🛍️</div><div class="intent-tile__name">eCommerce</div><div class="intent-tile__desc">Sell with confidence</div>
+        </button>
+        <button class="intent-tile" data-intent="developer">
+          <div class="intent-tile__icon">⌨️</div><div class="intent-tile__name">Developer</div><div class="intent-tile__desc">Dev tools &amp; control</div>
+        </button>
+        <button class="intent-tile" data-intent="security">
+          <div class="intent-tile__icon">🛡️</div><div class="intent-tile__name">Security</div><div class="intent-tile__desc">Keep your site safe</div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CATEGORY TILES ═══════════ -->
+  <section id="categories">
+    <div class="wrap">
+      <h2 class="section__title">What kind of hosting do you need?</h2>
+      <p class="section__sub">Click a category to filter the comparison — or read the plain-English explainer for each.</p>
+      <div class="cat-tiles">
+        <button class="cat-tile" data-cat="shared">
+          <div class="cat-tile__icon">🏠</div>
+          <div class="cat-tile__name">Shared Hosting</div>
+          <div class="cat-tile__desc">Best for beginners, small blogs, low traffic. $2–5/mo.</div>
+        </button>
+        <button class="cat-tile" data-cat="wordpress">
+          <div class="cat-tile__icon">📝</div>
+          <div class="cat-tile__name">WordPress Hosting</div>
+          <div class="cat-tile__desc">Managed, optimised for WordPress & WooCommerce. $10–50/mo.</div>
+        </button>
+        <button class="cat-tile" data-cat="cloud">
+          <div class="cat-tile__icon">☁️</div>
+          <div class="cat-tile__name">Cloud Hosting</div>
+          <div class="cat-tile__desc">Scalable, pay-as-you-go. Growing & variable traffic. $5–20/mo.</div>
+        </button>
+        <button class="cat-tile" data-cat="cloud">
+          <div class="cat-tile__icon">🔧</div>
+          <div class="cat-tile__name">VPS Hosting</div>
+          <div class="cat-tile__desc">More control, dedicated resources. Developers. $5–50/mo.</div>
+        </button>
+        <button class="cat-tile" data-cat="dedicated">
+          <div class="cat-tile__icon">🏢</div>
+          <div class="cat-tile__name">Dedicated Hosting</div>
+          <div class="cat-tile__desc">Entire server for your site. Enterprise. $80–500+/mo.</div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MATCH QUIZ ═══════════ -->
+  <section id="quiz-section">
+    <div class="wrap">
+      <h2 class="section__title" style="text-align:center">Not sure? Take the 30-second match quiz</h2>
+      <p class="section__sub" style="text-align:center">Three questions. We'll recommend the right category and top providers.</p>
+      <div class="quiz" id="quiz">
+        <div class="quiz__progress">
+          <span class="quiz__dot active"></span><span class="quiz__dot"></span><span class="quiz__dot"></span>
+        </div>
+        <div class="quiz__step active" data-step="0">
+          <div class="quiz__q">What's your monthly budget?</div>
+          <div class="quiz__opts">
+            <button class="quiz__opt" data-q="budget" data-val="under5">Under $5 — keep it cheap</button>
+            <button class="quiz__opt" data-q="budget" data-val="5to15">$5–$15 — entry-level managed or shared</button>
+            <button class="quiz__opt" data-q="budget" data-val="15to30">$15–$30 — premium shared or cloud</button>
+            <button class="quiz__opt" data-q="budget" data-val="30to100">$30–$100 — managed WordPress or VPS</button>
+            <button class="quiz__opt" data-q="budget" data-val="100plus">$100+ — enterprise or dedicated</button>
+          </div>
+        </div>
+        <div class="quiz__step" data-step="1">
+          <div class="quiz__q">What are you building?</div>
+          <div class="quiz__opts">
+            <button class="quiz__opt" data-q="site" data-val="blog">Personal blog / small business site</button>
+            <button class="quiz__opt" data-q="site" data-val="wordpress">WordPress site (blog, business, WooCommerce)</button>
+            <button class="quiz__opt" data-q="site" data-val="app">Web app / custom development</button>
+            <button class="quiz__opt" data-q="site" data-val="ecommerce">High-traffic ecommerce store</button>
+            <button class="quiz__opt" data-q="site" data-val="agency">Agency / multiple client sites</button>
+          </div>
+        </div>
+        <div class="quiz__step" data-step="2">
+          <div class="quiz__q">How technical are you?</div>
+          <div class="quiz__opts">
+            <button class="quiz__opt" data-q="skill" data-val="beginner">Beginner — I want everything managed for me</button>
+            <button class="quiz__opt" data-q="skill" data-val="some">I know some basics — control without complexity</button>
+            <button class="quiz__opt" data-q="skill" data-val="dev">Developer — give me SSH, staging, full control</button>
+          </div>
+        </div>
+        <div class="quiz__result" id="quiz-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SCORECARDS ═══════════ -->
+  <section id="scorecards">
+    <div class="wrap">
+      <h2 class="section__title">Top hosting picks <span style="font-weight:500;color:var(--text-muted);font-size:1rem">(June 2026)</span></h2>
+      <p class="section__sub">Editorial scores out of 100. A different winner for each priority — no single "best" for everyone.</p>
+      <div class="scorecards-grid" id="scorecards-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ GUIDES ═══════════ -->
+  <section id="guides" style="padding-bottom:1rem">
+    <div class="wrap">
+      <h2 class="section__title">Hosting guides</h2>
+      <p class="section__sub">Plain-English guides for every situation — each with editorial picks and the real 3-year cost.</p>
+      <div class="vs-links">
+        <a href="/cheapest-hosting">Cheapest hosting</a>
+        <a href="/best-wordpress-hosting">Best WordPress hosting</a>
+        <a href="/hosting-renewal-price-comparison">Renewal price trap</a>
+        <a href="/best-hosting-for-beginners">For beginners</a>
+        <a href="/best-hosting-for-small-business">For small business</a>
+        <a href="/best-hosting-for-agencies">For agencies</a>
+        <a href="/best-hosting-for-nonprofits">For nonprofits</a>
+        <a href="/best-hosting-for-high-traffic">For high traffic</a>
+        <a href="/best-reseller-hosting">Reseller hosting</a>
+        <a href="/green-eco-hosting">Green / eco hosting</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ HEAD-TO-HEAD ═══════════ -->
+  <section id="head-to-head" style="padding-top:1rem">
+    <div class="wrap">
+      <h2 class="section__title">Popular head-to-head comparisons</h2>
+      <p class="section__sub">The matchups people search most — scored side by side, with the real 3-year cost.</p>
+      <div class="vs-links">
+        <a href="/hostinger-vs-bluehost">Hostinger vs Bluehost</a>
+        <a href="/hostinger-vs-siteground">Hostinger vs SiteGround</a>
+        <a href="/siteground-vs-bluehost">SiteGround vs Bluehost</a>
+        <a href="/kinsta-vs-wp-engine">Kinsta vs WP Engine</a>
+        <a href="/cloudways-vs-kinsta">Cloudways vs Kinsta</a>
+        <a href="/dreamhost-vs-bluehost">DreamHost vs Bluehost</a>
+        <a href="/hostinger-vs-namecheap">Hostinger vs Namecheap</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ COMPARISON TABLE ═══════════ -->
+  <section id="compare">
+    <div class="wrap">
+      <div class="table-tools">
+        <div>
+          <h2 class="section__title">Compare all 22 providers</h2>
+          <p class="section__sub" style="margin-bottom:0">Sortable. The <strong style="color:var(--accent-light)">True 3-Year Cost</strong> column shows what you actually pay — intro year plus two renewal years.</p>
+        </div>
+        <div class="audience-toggle" id="audience-toggle">
+          <button class="active" data-mode="beginner">👶 Beginner view</button>
+          <button data-mode="pro">👨‍💻 Pro view</button>
+        </div>
+      </div>
+      <div class="filter-row" id="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="shared">🏠 Shared</button>
+        <button class="filter-btn" data-filter="wordpress">📝 WordPress</button>
+        <button class="filter-btn" data-filter="cloud">☁️ Cloud/VPS</button>
+        <button class="filter-btn" data-filter="dedicated">🏢 Dedicated</button>
+        <button class="filter-btn" data-filter="beginner">👶 Beginners</button>
+        <button class="filter-btn" data-filter="developer">👨‍💻 Developers</button>
+        <button class="filter-btn" data-filter="budget">💰 Budget</button>
+        <button class="filter-btn" data-filter="ecommerce">🛍️ eCommerce</button>
+        <button class="filter-btn" data-filter="agency">🏢 Agencies</button>
+        <button class="filter-btn" data-filter="eco">🌿 Eco</button>
+        <button class="filter-btn" data-filter="staging">🔀 Staging</button>
+      </div>
+      <div class="table-scroll">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th class="cmp-check-cell" aria-label="Add to compare">＋</th>
+              <th data-sort="name">Provider</th>
+              <th data-sort="score">Our Score <span class="tip">ⓘ<span class="tip__box">Weighted across 8 factors: Performance 25%, Uptime 20%, Price 20%, Support 15%, Security 10%, Ease 5%, Scalability 3%, Dev 2%.</span></span></th>
+              <th data-sort="performance" class="pro-only">Performance <span class="tip">ⓘ<span class="tip__box">How fast your site loads. Based on TTFB, Core Web Vitals, and CDN.</span></span></th>
+              <th data-sort="entry">Entry Price <span class="tip">ⓘ<span class="tip__box">Introductory price for the first term. Renewal rates are often higher.</span></span></th>
+              <th data-sort="renewal">Renewal <span class="tip">ⓘ<span class="tip__box">⚠️ What you pay after the first term. Many providers increase this significantly.</span></span></th>
+              <th data-sort="truecost">True 3-Yr Cost <span class="tip">ⓘ<span class="tip__box">The real cost: 12 months at the intro price + 24 months at renewal. The number nobody else shows.</span></span></th>
+              <th data-sort="uptime" class="pro-only">Uptime SLA <span class="tip">ⓘ<span class="tip__box">Guaranteed uptime. 99.9% = ~9 hours downtime per year.</span></span></th>
+              <th class="pro-only">Support</th>
+              <th>Best For</th>
+              <th>Visit</th>
+            </tr>
+          </thead>
+          <tbody id="compare-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EDUCATIONAL ═══════════ -->
+  <section id="learn">
+    <div class="wrap">
+      <h2 class="section__title">New to hosting? Start here</h2>
+      <p class="section__sub">Plain-English explainers. Click to expand the technical detail when you want it.</p>
+
+      <div class="expander" data-exp>
+        <div class="expander__head">What is web hosting? <span class="chev">▶</span></div>
+        <div class="expander__body">
+          <p><strong>Short version:</strong> Web hosting is where your website lives — like renting space on the internet. When someone visits your site, the hosting provider delivers your pages to their browser.</p>
+          <p>When you buy hosting, you're renting space on a server — a powerful computer that stays online 24/7. Your website files (HTML, images, code) live on that server. When someone types your domain name, the server sends those files to their browser.</p>
+          <p>Shared hosting is like an apartment building (many sites share one server). VPS is like a townhouse (dedicated space, some sharing). Dedicated is like a single-family home (the whole server is yours).</p>
+        </div>
+      </div>
+
+      <div class="expander" data-exp>
+        <div class="expander__head">Shared vs WordPress vs Cloud vs VPS vs Dedicated <span class="chev">▶</span></div>
+        <div class="expander__body">
+          <table>
+            <thead><tr><th>Type</th><th>Best for</th><th>Pros</th><th>Cons</th><th>Price</th></tr></thead>
+            <tbody>
+              <tr><td>Shared</td><td>Beginners, small blogs</td><td>Cheap, easy</td><td>Slower, neighbours affect you</td><td>$2–15/mo</td></tr>
+              <tr><td>WordPress</td><td>WordPress sites</td><td>Optimised, often managed</td><td>WP-only, pricier</td><td>$10–50/mo</td></tr>
+              <tr><td>Cloud</td><td>Growing sites</td><td>Scalable, pay-as-you-go</td><td>More complex</td><td>$5–50/mo</td></tr>
+              <tr><td>VPS</td><td>Developers, high traffic</td><td>Dedicated resources, control</td><td>Needs technical knowledge</td><td>$5–100/mo</td></tr>
+              <tr><td>Dedicated</td><td>Enterprise, huge traffic</td><td>Full control, max performance</td><td>Expensive, needs sysadmin</td><td>$80–500+/mo</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="expander" data-exp>
+        <div class="expander__head">What to look for in a hosting provider <span class="chev">▶</span></div>
+        <div class="expander__body">
+          <ul class="checklist">
+            <li><strong>Uptime</strong> — 99.9% minimum. If your site is down, you lose visitors and money.</li>
+            <li><strong>Speed</strong> — TTFB under 200ms, Core Web Vitals pass. Slow sites lose rankings.</li>
+            <li><strong>Support</strong> — 24/7 live chat or phone for when something breaks.</li>
+            <li><strong>Price</strong> — check the renewal price, not just the intro. The cheapest isn't always best.</li>
+            <li><strong>Backups</strong> — daily automatic backups, 30-day retention.</li>
+            <li><strong>SSL</strong> — free SSL included (Let's Encrypt). Encrypts visitor data.</li>
+            <li><strong>Money-back guarantee</strong> — 30 days minimum for a risk-free trial.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="expander" data-exp>
+        <div class="expander__head">⚠️ The renewal price trap — read this before you buy <span class="chev">▶</span></div>
+        <div class="expander__body">
+          <p>Introductory prices are discounts to attract new customers. After the first term, you pay the standard (renewal) rate — often 3–8× higher. Hostinger's $2.99 becomes $9.99. SiteGround's $3.99 becomes $14.99.</p>
+          <p>That's why our table shows the <strong style="color:var(--accent-light)">True 3-Year Cost</strong>: 12 months at the intro price plus 24 months at renewal. It's the single most honest number when comparing hosts.</p>
+          <p><a href="/hosting-renewal-price-comparison">→ See the full renewal price comparison</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FAQ ═══════════ -->
+  <section id="faq">
+    <div class="wrap" style="max-width:820px">
+      <h2 class="section__title">Hosting questions, answered</h2>
+      <p class="section__sub">Simple answers for beginners, with detail for pros.</p>
+      <div id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__network">
+        🔗 Part of the Best Match network — building your own setup?
+        Compare <a href="https://bestvpsmatch.com">VPS providers</a> or
+        <a href="https://bestvpnmatch.com">VPNs</a> too.
+      </div>
+      <div class="footer__grid">
+        <div class="footer__col footer__brand">
+          <a href="/" class="nav__logo"><span class="nav__logo-mark">H</span> Best Hosting Match</a>
+          <p>Independent web hosting comparison. 8-factor editorial scoring. No paid placement.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Compare</h4>
+          <a href="/cheapest-hosting">Cheapest hosting</a>
+          <a href="/best-wordpress-hosting">Best WordPress hosting</a>
+          <a href="/hosting-renewal-price-comparison">Renewal price trap</a>
+          <a href="/best-reseller-hosting">Reseller hosting</a>
+          <a href="/green-eco-hosting">Green / eco hosting</a>
+        </div>
+        <div class="footer__col">
+          <h4>By audience</h4>
+          <a href="/best-hosting-for-beginners">For beginners</a>
+          <a href="/best-hosting-for-small-business">For small business</a>
+          <a href="/best-hosting-for-agencies">For agencies</a>
+          <a href="/best-hosting-for-nonprofits">For nonprofits</a>
+          <a href="/best-hosting-for-high-traffic">For high traffic</a>
+        </div>
+        <div class="footer__col">
+          <h4>Transparency</h4>
+          <a href="/methodology">Methodology</a>
+          <a href="/about">About</a>
+          <a href="/ethics">Ethics</a>
+          <a href="/privacy">Privacy &amp; legal</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2026 Best Hosting Match — Independent editorial. No paid placement. Scores based on published specs, SLAs, and public data — not first-person lab tests.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ SHORTLIST TRAY ═══════════ -->
+  <div id="shortlist-tray" class="shortlist-tray" hidden>
+    <div class="wrap shortlist-tray__inner">
+      <div class="shortlist-tray__left">
+        <span id="tray-count" class="tray-count">Selected: 0</span>
+        <div id="tray-chips" class="tray-chips"></div>
+        <span id="tray-hint"></span>
+      </div>
+      <div class="shortlist-tray__right">
+        <button id="tray-clear" class="btn btn--ghost btn--sm">Clear</button>
+        <button id="tray-compare" class="btn btn--primary btn--sm">Compare now →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ COMPARE MODAL ═══════════ -->
+  <div id="compare-modal" class="cmp-modal" hidden>
+    <div class="cmp-modal__backdrop" data-close></div>
+    <div class="cmp-modal__panel" role="dialog" aria-modal="true" aria-label="Compare hosting providers">
+      <button class="cmp-modal__close" data-close aria-label="Close comparison">×</button>
+      <div id="cmp-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════ DATA + LOGIC ═══════════ -->
+  <script src="data/site-config.js"></script>
+  <script src="data/scoring.js"></script>
+  <script src="data/hosting-data.js"></script>
+  <script>
+  (function () {
+    "use strict";
+
+    /* ── helpers ── */
+    const $  = (s, c) => (c || document).querySelector(s);
+    const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
+    const money = n => "$" + Number(n).toFixed(2);
+    const moneyR = n => "$" + Math.round(n).toLocaleString();
+
+    function scoreClass(n) {
+      if (n >= 90) return "score-pill--exceptional";
+      if (n >= 84) return "score-pill--excellent";
+      if (n >= 76) return "score-pill--good";
+      return "score-pill--fair";
+    }
+    function pill(n) { return `<span class="score-pill ${scoreClass(n)}">${n}<span>/100</span></span>`; }
+    function srcLink(url) {
+      if (!url) return "";
+      return ` <a class="src-link" href="${url}" target="_blank" rel="noopener noreferrer" title="Source">ⓘ</a>`;
+    }
+
+    /* ── THEME TOGGLE ── */
+    const themeBtn = $("#theme-toggle");
+    function syncThemeIcon() {
+      const dark = document.documentElement.getAttribute("data-theme") === "dark";
+      themeBtn.textContent = dark ? "☀️" : "🌙";
+    }
+    syncThemeIcon();
+    themeBtn.addEventListener("click", () => {
+      const dark = document.documentElement.getAttribute("data-theme") === "dark";
+      if (dark) { document.documentElement.removeAttribute("data-theme"); localStorage.setItem("hosting-theme", "light"); }
+      else { document.documentElement.setAttribute("data-theme", "dark"); localStorage.setItem("hosting-theme", "dark"); }
+      syncThemeIcon();
+    });
+
+    /* ── PROMO BAR ── */
+    const top = HOSTINGS[0];
+    if (top) $("#promo-top").textContent = top.name + " (" + top.weightedScore + "/100)";
+
+    /* ── SCORECARDS (6 distinct categories, deduplicated) ── */
+    const byScore = (arr, key) => arr.slice().sort((a, b) => b[key] - a[key]);
+    const SCORECARDS = [
+      { label: "Top Pick Overall",   pick: a => byScore(a, "weightedScore")[0] },
+      { label: "Best Value",         pick: a => byScore(a.filter(v => v.entryPrice < 12), "priceScore")[0] },
+      { label: "Best for WordPress", pick: a => byScore(a.filter(v => v.category === "wordpress"), "performanceScore")[0] },
+      { label: "Best for Developers",pick: a => byScore(a, "devScore")[0] },
+      { label: "Best Uptime",        pick: a => byScore(a, "uptimeScore")[0] },
+      { label: "Best for Beginners", pick: a => byScore(a.filter(v => ["shared","wordpress"].includes(v.category)), "easeScore")[0] }
+    ];
+    function renderScorecards() {
+      const grid = $("#scorecards-grid");
+      const seen = new Set();
+      const cards = [];
+      for (const sc of SCORECARDS) {
+        let v = sc.pick(HOSTINGS);
+        if (!v) continue;
+        if (seen.has(v.id)) { v = byScore(HOSTINGS.filter(x => !seen.has(x.id)), "weightedScore")[0]; }
+        if (!v || seen.has(v.id)) continue;
+        seen.add(v.id);
+        const ribbon = v.ranking === 1 ? `<div class="scorecard__ribbon">Editor's Pick</div>` : "";
+        cards.push(`
+          <div class="scorecard">
+            ${ribbon}
+            <div class="scorecard__cat">${sc.label}</div>
+            <div class="scorecard__head">
+              <span class="scorecard__icon">${v.logoIcon}</span>
+              <span class="scorecard__name">${v.name}</span>
+              <span class="scorecard__score">${v.weightedScore}<small>/100</small></span>
+            </div>
+            <p class="scorecard__tagline">${v.tagline}</p>
+            <div class="scorecard__metrics">
+              <div class="metric"><span class="metric__label">Entry price</span><span class="metric__val price-entry">${money(v.entryPrice)}/mo</span></div>
+              <div class="metric"><span class="metric__label">3-yr true cost</span><span class="metric__val true-cost">${moneyR(v.trueThreeYearCost)}</span></div>
+              <div class="metric"><span class="metric__label">Uptime SLA</span><span class="metric__val">${v.slaGuarantee}%</span></div>
+              <div class="metric"><span class="metric__label">Support</span><span class="metric__val">${v.support24_7 ? "24/7" : "Limited"}</span></div>
+            </div>
+            <div class="scorecard__tags">
+              ${(v.tags||[]).slice(0,3).map(t => `<span class="tag-pill">${t}</span>`).join("")}
+            </div>
+            <div class="scorecard__cta">
+              <a href="${v.affiliateLink}" target="_blank" rel="${outboundRel()}" class="btn btn--primary btn--sm">Visit site →</a>
+              <button class="compare-btn" data-compare-toggle="${v.id}" data-compare-btn>＋ Compare</button>
+            </div>
+          </div>`);
+      }
+      grid.innerHTML = cards.join("");
+      syncCompareUI();
+    }
+
+    /* ── COMPARISON TABLE ── */
+    let currentFilter = "all";
+    let sortKey = "score", sortDir = -1;
+
+    function matchesFilter(v, f) {
+      if (f === "all") return true;
+      if (["shared","wordpress","cloud","dedicated"].includes(f)) return v.category === f;
+      return (v.tags || []).includes(f);
+    }
+    function sortVal(v, k) {
+      switch (k) {
+        case "name": return v.name.toLowerCase();
+        case "score": return v.weightedScore;
+        case "performance": return v.performanceScore;
+        case "entry": return v.entryPrice;
+        case "renewal": return v.renewalPrice;
+        case "truecost": return v.trueThreeYearCost;
+        case "uptime": return v.slaGuarantee;
+        case "security": return v.securityScore;
+        default: return v.weightedScore;
+      }
+    }
+    function renderTable() {
+      const body = $("#compare-body");
+      let rows = HOSTINGS.filter(v => matchesFilter(v, currentFilter));
+      rows.sort((a, b) => {
+        const av = sortVal(a, sortKey), bv = sortVal(b, sortKey);
+        if (typeof av === "string") return sortDir * av.localeCompare(bv);
+        return sortDir * (av - bv);
+      });
+      body.innerHTML = rows.map(v => `
+        <tr data-search="${[v.name, v.category, ...(v.tags||[])].join(' ').toLowerCase()}">
+          <td class="cmp-check-cell">
+            <input type="checkbox" class="cmp-check" data-compare-toggle="${v.id}" aria-label="Add ${v.name} to compare"${v.status !== 'active' ? ' disabled' : ''}>
+          </td>
+          <td>
+            <div class="prov-cell">
+              <span class="prov-cell__icon">${v.logoIcon}</span>
+              <div>
+                <div class="prov-cell__name">${v.name} <span class="cat-badge">${v.category}</span></div>
+                <div class="prov-cell__tag">${v.tagline}</div>
+              </div>
+            </div>
+          </td>
+          <td>${pill(v.weightedScore)}</td>
+          <td class="pro-only">${pill(v.performanceScore)}</td>
+          <td><span class="price-entry">${money(v.entryPrice)}</span><small style="color:var(--text-muted)">/mo</small></td>
+          <td><span class="price-renewal">${money(v.renewalPrice)}</span><small style="color:var(--text-muted)">/mo</small></td>
+          <td class="true-cost">${moneyR(v.trueThreeYearCost)}<small>over 3 years</small></td>
+          <td class="pro-only">${v.slaGuarantee}%</td>
+          <td class="pro-only">${v.support24_7 ? "24/7" : "Limited"}${(v.supportChannels||[]).includes("Phone") ? " 📞" : ""}</td>
+          <td style="white-space:normal;max-width:160px;font-size:0.8rem;color:var(--text-secondary)">${v.bestFor}</td>
+          <td><a href="${v.affiliateLink}" target="_blank" rel="${outboundRel()}" class="btn btn--primary btn--sm">Visit →</a></td>
+        </tr>`).join("");
+      syncCompareUI();
+    }
+
+    /* filters */
+    $$("#filter-row .filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        $$("#filter-row .filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentFilter = btn.dataset.filter;
+        renderTable();
+      });
+    });
+    /* sort */
+    $$("table.compare thead th[data-sort]").forEach(th => {
+      th.addEventListener("click", () => {
+        const k = th.dataset.sort;
+        if (sortKey === k) sortDir *= -1;
+        else { sortKey = k; sortDir = (k === "name" || k === "entry" || k === "renewal" || k === "truecost") ? 1 : -1; }
+        renderTable();
+      });
+    });
+
+    /* ── AUDIENCE TOGGLE (beginner/pro) ── */
+    $$("#audience-toggle button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        $$("#audience-toggle button").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        document.body.classList.toggle("pro-mode", btn.dataset.mode === "pro");
+      });
+    });
+
+    /* ── CATEGORY TILES → filter table ── */
+    $$(".cat-tile").forEach(tile => {
+      tile.addEventListener("click", () => {
+        const cat = tile.dataset.cat;
+        currentFilter = cat;
+        $$("#filter-row .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.filter === cat));
+        renderTable();
+        $("#compare").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    /* ── INTENT TILES → filter/sort table ── */
+    const TAG_INTENTS = { wordpress: "wordpress", budget: "budget", ecommerce: "ecommerce", developer: "developer" };
+    $$(".intent-tile").forEach(tile => {
+      tile.addEventListener("click", () => {
+        const intent = tile.dataset.intent;
+        if (TAG_INTENTS[intent]) {
+          currentFilter = TAG_INTENTS[intent];
+          sortKey = "score"; sortDir = -1;
+        } else {
+          currentFilter = "all";
+          sortKey = (intent === "security") ? "security" : "performance";
+          sortDir = -1;
+        }
+        $$("#filter-row .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.filter === currentFilter));
+        renderTable();
+        $("#compare").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    /* ── HERO SEARCH → filter table ── */
+    const heroSearch = $("#hero-search");
+    if (heroSearch) {
+      let t;
+      heroSearch.addEventListener("input", () => {
+        clearTimeout(t);
+        t = setTimeout(() => {
+          const q = heroSearch.value.trim().toLowerCase();
+          $$("#compare-body tr").forEach(tr => {
+            tr.style.display = (!q || tr.dataset.search.includes(q)) ? "" : "none";
+          });
+          if (q) $("#compare").scrollIntoView({ behavior: "smooth" });
+        }, 220);
+      });
+    }
+
+    /* ── MATCH QUIZ ── */
+    const answers = {};
+    let step = 0;
+    function showStep(n) {
+      $$(".quiz__step").forEach(s => s.classList.toggle("active", +s.dataset.step === n));
+      $$(".quiz__dot").forEach((d, i) => d.classList.toggle("active", i <= n));
+    }
+    function recommendCategory() {
+      const { budget, site, skill } = answers;
+      if (site === "app" || skill === "dev") return "cloud";
+      if (site === "ecommerce") return "wordpress";
+      if (site === "agency") return "wordpress";
+      if (site === "wordpress") return (budget === "under5") ? "shared" : "wordpress";
+      if (budget === "100plus") return "dedicated";
+      if (budget === "30to100") return "wordpress";
+      return "shared";
+    }
+    function renderResult() {
+      const cat = recommendCategory();
+      const labels = { shared:"Shared Hosting", wordpress:"Managed WordPress", cloud:"Cloud / VPS", dedicated:"Dedicated Hosting" };
+      let pool = HOSTINGS.filter(v => v.category === cat);
+      if (answers.skill === "beginner") pool.sort((a,b)=>b.easeScore-a.easeScore);
+      else if (answers.skill === "dev") pool.sort((a,b)=>b.devScore-a.devScore);
+      else pool.sort((a,b)=>b.weightedScore-a.weightedScore);
+      const top3 = pool.slice(0, 3);
+      const res = $("#quiz-result");
+      res.innerHTML = `
+        <div style="text-align:center;margin-bottom:1.2rem">
+          <div style="font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em">Your match</div>
+          <div style="font-size:1.4rem;font-weight:900;color:var(--accent)">${labels[cat]}</div>
+          <div style="font-size:0.85rem;color:var(--text-secondary)">Based on your budget, site type, and experience level</div>
+        </div>
+        <div class="scorecards-grid">
+          ${top3.map(v => `
+            <div class="scorecard">
+              <div class="scorecard__head">
+                <span class="scorecard__icon">${v.logoIcon}</span>
+                <span class="scorecard__name">${v.name}</span>
+                <span class="scorecard__score">${v.weightedScore}<small>/100</small></span>
+              </div>
+              <p class="scorecard__tagline">${v.tagline}</p>
+              <div class="scorecard__metrics">
+                <div class="metric"><span class="metric__label">Entry</span><span class="metric__val price-entry">${money(v.entryPrice)}/mo</span></div>
+                <div class="metric"><span class="metric__label">3-yr cost</span><span class="metric__val true-cost">${moneyR(v.trueThreeYearCost)}</span></div>
+              </div>
+              <div class="scorecard__cta">
+                <a href="${v.affiliateLink}" target="_blank" rel="${outboundRel()}" class="btn btn--primary btn--sm">Visit site →</a>
+                <button class="compare-btn" data-compare-toggle="${v.id}" data-compare-btn>＋ Compare</button>
+              </div>
+            </div>`).join("")}
+        </div>
+        <div style="text-align:center;margin-top:1.3rem;display:flex;gap:0.6rem;justify-content:center;flex-wrap:wrap">
+          <button class="btn btn--primary btn--sm" id="quiz-compare">Compare these →</button>
+          <button class="btn btn--ghost btn--sm" id="quiz-restart">↺ Start over</button>
+        </div>`;
+      $$(".quiz__step").forEach(s => s.classList.remove("active"));
+      $(".quiz__progress").style.display = "none";
+      res.classList.add("active");
+      $("#quiz-restart").addEventListener("click", () => {
+        Object.keys(answers).forEach(k => delete answers[k]);
+        step = 0; res.classList.remove("active");
+        $(".quiz__progress").style.display = "";
+        showStep(0);
+      });
+      syncCompareUI();
+      $("#quiz-compare").addEventListener("click", () => {
+        setShortlist(top3.map(v => v.id));   // replace with quiz top-3
+        openCompareModal();                  // open immediately, no prompt (V1)
+      });
+    }
+    $$(".quiz__opt").forEach(opt => {
+      opt.addEventListener("click", () => {
+        answers[opt.dataset.q] = opt.dataset.val;
+        step++;
+        if (step > 2) renderResult();
+        else showStep(step);
+      });
+    });
+
+    /* ── EXPANDERS ── */
+    $$("[data-exp] .expander__head").forEach(h => {
+      h.addEventListener("click", () => h.parentElement.classList.toggle("open"));
+    });
+
+    /* ── FAQ ── */
+    const FAQ = [
+      ["What's the difference between shared hosting and VPS?", "Shared hosting: your site shares a server with hundreds of others. Cheap but slower. VPS: you get dedicated CPU/RAM on a shared server. More expensive but faster and more secure."],
+      ["Which hosting is best for beginners?", "Hostinger (cheap, easy hPanel) or SiteGround (best support, slightly pricier). Both handle the technical side for you."],
+      ["Can I switch hosting providers later?", "Yes. Most providers offer free migration. You can move anytime — you're never locked in."],
+      ["Do I need managed WordPress hosting?", "If you're not technical: yes — it handles updates, backups, and security for you. If you're a developer: you might prefer unmanaged VPS or cloud for full control."],
+      ["Why do renewal prices increase?", "Intro prices are discounts to attract new customers. Renewal is the standard rate, often 3–8× higher. Always check the renewal price — that's why we show the True 3-Year Cost."],
+      ["What's the best hosting for WooCommerce?", "Managed WordPress hosts: Kinsta, WP Engine, Cloudways. Shared hosting can work for small shops (under ~100 orders/day)."],
+      ["What's the best hosting for high traffic?", "Cloud hosting (Cloudways, DigitalOcean) or managed WordPress (Kinsta, WP Engine). Avoid shared hosting above ~10,000 monthly visitors."],
+      ["How does your scoring work?", "We score 22 providers across 8 factors: Performance 25%, Uptime 20%, Price/Value 20%, Support 15%, Security 10%, Ease 5%, Scalability 3%, Dev Features 2%. Scores are editorial, based on published specs and SLAs — not first-person lab tests."]
+    ];
+    $("#faq-list").innerHTML = FAQ.map(([q, a]) => `
+      <div class="faq-item">
+        <div class="faq-q">${q} <span class="chev">+</span></div>
+        <div class="faq-a">${a}</div>
+      </div>`).join("");
+    $$(".faq-item .faq-q").forEach(q => q.addEventListener("click", () => q.parentElement.classList.toggle("open")));
+
+    /* ─────────── DECISION ENGINE (V1) ─────────── */
+    const SHORTLIST_KEY = "hosting-shortlist";
+    const MAX_DESKTOP = 4, MAX_MOBILE = 3;
+    let shortlist = [];   // array of provider ids, in selection order
+
+    /* 8 factors in weight order, with beginner-friendly relative labels */
+    const FACTORS = [
+      { key: "performanceScore", best: "Best speed",        worst: "Slowest" },
+      { key: "uptimeScore",      best: "Best uptime",       worst: "Lowest uptime" },
+      { key: "priceScore",       best: "Best value",        worst: "Weakest value" },
+      { key: "supportScore",     best: "Best support",      worst: "Weakest support" },
+      { key: "securityScore",    best: "Best security",     worst: "Weakest security" },
+      { key: "easeScore",        best: "Easiest to use",    worst: "Hardest to use" },
+      { key: "scalabilityScore", best: "Best for scaling",  worst: "Least scalable" },
+      { key: "devScore",         best: "Best dev tools",    worst: "Fewest dev tools" }
+    ];
+    const NUM_WORD = { 2: "two", 3: "three", 4: "four" };
+    const numWord = n => NUM_WORD[n] || ("" + n);
+    const findV = id => HOSTINGS.find(v => v.id === id);
+    const maxSel = () => (window.matchMedia("(max-width: 640px)").matches ? MAX_MOBILE : MAX_DESKTOP);
+
+    function saveShortlist() { try { sessionStorage.setItem(SHORTLIST_KEY, JSON.stringify(shortlist)); } catch (e) {} }
+    function loadShortlist() {
+      try {
+        const raw = JSON.parse(sessionStorage.getItem(SHORTLIST_KEY) || "[]");
+        if (!Array.isArray(raw)) throw 0;
+        shortlist = raw.filter(id => { const v = findV(id); return v && v.status === "active"; }).slice(0, maxSel());
+      } catch (e) { shortlist = []; try { sessionStorage.removeItem(SHORTLIST_KEY); } catch (e2) {} }
+    }
+    const inList = id => shortlist.indexOf(id) > -1;
+    const canAdd = () => shortlist.length < maxSel();
+
+    function addToShortlist(id) {
+      const v = findV(id);
+      if (!v || v.status !== "active" || inList(id) || !canAdd()) return;
+      shortlist.push(id); saveShortlist(); syncCompareUI();
+    }
+    function removeFromShortlist(id) {
+      const i = shortlist.indexOf(id);
+      if (i > -1) { shortlist.splice(i, 1); saveShortlist(); syncCompareUI(); }
+    }
+    function toggleShortlist(id) { inList(id) ? removeFromShortlist(id) : addToShortlist(id); }
+    function clearShortlist() { shortlist = []; saveShortlist(); syncCompareUI(); }
+    function setShortlist(ids) {
+      shortlist = ids.filter(id => { const v = findV(id); return v && v.status === "active"; }).slice(0, maxSel());
+      saveShortlist(); syncCompareUI();
+    }
+
+    /* keep every checkbox/button + the tray in sync with state */
+    function syncCompareUI() {
+      $$("[data-compare-toggle]").forEach(el => {
+        const id = el.getAttribute("data-compare-toggle");
+        const on = inList(id);
+        const disable = !on && !canAdd();
+        if (el.tagName === "INPUT") { el.checked = on; el.disabled = disable || (findV(id) && findV(id).status !== "active"); }
+        else { el.classList.toggle("is-checked", on); el.classList.toggle("is-disabled", disable); el.textContent = on ? "✓ Added" : "＋ Compare"; }
+      });
+      renderTray();
+    }
+    function renderTray() {
+      const tray = $("#shortlist-tray");
+      if (!tray) return;
+      if (shortlist.length === 0) { tray.classList.remove("show"); tray.setAttribute("hidden", ""); document.body.classList.remove("tray-open"); return; }
+      tray.removeAttribute("hidden"); tray.classList.add("show"); document.body.classList.add("tray-open");
+      $("#tray-count").textContent = "Selected: " + shortlist.length;
+      $("#tray-chips").innerHTML = shortlist.map(id => {
+        const v = findV(id);
+        return `<span class="tray-chip">${v.logoIcon} ${v.name}<button class="tray-chip__x" data-remove="${id}" aria-label="Remove ${v.name}">×</button></span>`;
+      }).join("");
+      $("#tray-hint").innerHTML = shortlist.length === 1 ? `<span class="tray-hint">Select 1 more to compare</span>` : "";
+      const cmp = $("#tray-compare");
+      const ready = shortlist.length >= 2;
+      cmp.disabled = !ready; cmp.classList.toggle("is-disabled", !ready);
+    }
+
+    /* ---- verdict logic (locked scoring only; never affiliate) ---- */
+    const numVals = (set, key) => set.map(v => v[key]).filter(n => typeof n === "number");
+    function isStrictBest(v, set, key) {
+      if (typeof v[key] !== "number") return false;
+      const max = Math.max(...numVals(set, key));
+      return v[key] === max && set.filter(x => x[key] === max).length === 1;
+    }
+    function isStrictWorst(v, set, key) {
+      if (typeof v[key] !== "number") return false;
+      const min = Math.min(...numVals(set, key));
+      return v[key] === min && set.filter(x => x[key] === min).length === 1;
+    }
+    const countBests = (v, set) => FACTORS.filter(f => isStrictBest(v, set, f.key)).length;
+    function pickWinner(set) {
+      return set.slice().sort((a, b) => {
+        if (b.weightedScore !== a.weightedScore) return b.weightedScore - a.weightedScore;
+        const d = countBests(b, set) - countBests(a, set); if (d) return d;
+        if (a.trueThreeYearCost !== b.trueThreeYearCost) return a.trueThreeYearCost - b.trueThreeYearCost;
+        return a.name.localeCompare(b.name);
+      })[0];
+    }
+    function strengthsOf(winner, set) {
+      const s = FACTORS.filter(f => isStrictBest(winner, set, f.key)).slice(0, 3).map(f => f.best + " of your " + numWord(set.length));
+      if (!s.length) s.push("Highest overall score of your selection");
+      return s;
+    }
+    function tradeoffsOf(winner, set) {
+      const t = FACTORS.filter(f => isStrictWorst(winner, set, f.key)).slice(0, 2).map(f => f.worst + " of your " + numWord(set.length));
+      const cheapest = set.slice().sort((a, b) => a.trueThreeYearCost - b.trueThreeYearCost)[0];
+      if (cheapest.id !== winner.id && typeof winner.trueThreeYearCost === "number" && typeof cheapest.trueThreeYearCost === "number") {
+        const diff = winner.trueThreeYearCost - cheapest.trueThreeYearCost;
+        if (diff > 0) t.push("Costs " + moneyR(diff) + " more over 3 years than " + cheapest.name);
+      }
+      return t.slice(0, 3);
+    }
+    /* explain a tie: when the winner shares the top weighted score, say what broke it */
+    function tieExplanation(winner, set) {
+      const tied = set.filter(v => v.id !== winner.id && v.weightedScore === winner.weightedScore);
+      if (!tied.length) return "";
+      const runner = tied.slice().sort((a, b) => {
+        const d = countBests(b, set) - countBests(a, set); if (d) return d;
+        if (a.trueThreeYearCost !== b.trueThreeYearCost) return a.trueThreeYearCost - b.trueThreeYearCost;
+        return a.name.localeCompare(b.name);
+      })[0];
+      const cw = countBests(winner, set), cr = countBests(runner, set);
+      let reason;
+      if (cw > cr) reason = "more category wins (" + cw + " vs " + cr + ")";
+      else if (winner.trueThreeYearCost < runner.trueThreeYearCost) reason = "lower 3-year cost (" + moneyR(winner.trueThreeYearCost) + " vs " + moneyR(runner.trueThreeYearCost) + ")";
+      else return "Effectively tied " + winner.weightedScore + "/100 with " + runner.name + " — they're neck and neck, so weigh price and your own priorities.";
+      const others = tied.length === 1 ? runner.name : tied.length + " others";
+      return "Tied " + winner.weightedScore + "/100 with " + others + " — won on " + reason + ".";
+    }
+    const bestIdx = (set, getNum, dir) => {
+      const nums = set.map(getNum);
+      const valid = nums.filter(n => typeof n === "number");
+      if (!valid.length) return -1;
+      const target = dir === "high" ? Math.max(...valid) : Math.min(...valid);
+      return nums.indexOf(target);
+    };
+
+    function buildCompareHTML(set) {
+      const winner = pickWinner(set), wi = set.indexOf(winner);
+      const str = strengthsOf(winner, set), tos = tradeoffsOf(winner, set);
+      const tie = tieExplanation(winner, set);
+      const toHtml = tos.length
+        ? tos.map(x => `<li class="ko">❌ ${x}</li>`).join("")
+        : `<li class="ok">✅ No major trade-offs vs your shortlist</li>`;
+      const verdict = `
+        <div class="verdict">
+          <div class="verdict__badge">🥇 Best match of your shortlist</div>
+          <div class="verdict__name">${winner.logoIcon} ${winner.name} <span class="verdict__score">${winner.weightedScore}<small>/100</small></span></div>
+          ${tie ? `<div class="verdict__tie">⚖️ ${tie}</div>` : `<div class="verdict__sub">Top of your ${numWord(set.length)} on weighted score.</div>`}
+          <div class="verdict__cols">
+            <div><div class="verdict__h">Strengths</div><ul>${str.map(s => `<li class="ok">✅ ${s}</li>`).join("")}</ul></div>
+            <div><div class="verdict__h">Trade-offs</div><ul>${toHtml}</ul></div>
+          </div>
+          <a class="btn btn--primary" href="${winner.affiliateLink}" target="_blank" rel="${outboundRel()}">Visit ${winner.name} →</a>
+        </div>`;
+      const headCols = set.map((v, i) => `
+        <th class="${i === wi ? "is-winner" : ""}">
+          <div class="cmp-prov__head">
+            <div class="win-badge"${i === wi ? "" : ' style="visibility:hidden"'}>🥇 Best match</div>
+            <div class="cmp-prov">${v.logoIcon} <strong>${v.name}</strong></div>
+            <div class="cmp-prov__score">${pill(v.weightedScore)}</div>
+            ${i === wi
+              ? `<span class="cmp-prov__cta cmp-prov__yours">🥇 Your match</span>`
+              : `<a href="${v.affiliateLink}" target="_blank" rel="${outboundRel()}" class="btn btn--primary btn--sm cmp-prov__cta">Visit →</a>`}
+          </div>
+        </th>`).join("");
+      const row = (label, render, getNum, dir) => {
+        const bi = dir ? bestIdx(set, getNum, dir) : -1;
+        return `<tr><td class="cmp-rowlabel">${label}</td>${set.map((v, i) =>
+          `<td class="${i === wi ? "is-winner" : ""} ${i === bi ? "is-best" : ""}">${render(v)}</td>`).join("")}</tr>`;
+      };
+      const defaultRows =
+        row("Our score", v => pill(v.weightedScore), v => v.weightedScore, "high") +
+        row("Entry price", v => `<span class="price-entry">${money(v.entryPrice)}</span>`, v => v.entryPrice, "low") +
+        row("Renewal price", v => `<span class="price-renewal">${money(v.renewalPrice)}</span>`, v => v.renewalPrice, "low") +
+        row("True 3-year cost", v => `<span class="true-cost">${moneyR(v.trueThreeYearCost)}</span>`, v => v.trueThreeYearCost, "low") +
+        row("Support", v => (v.support24_7 ? "24/7" : "Limited"), null, null) +
+        row("Uptime SLA", v => v.slaGuarantee + "%", v => v.slaGuarantee, "high");
+      const FACTOR_LABELS = {
+        performanceScore: "Performance (25%)", uptimeScore: "Uptime (20%)", priceScore: "Price / Value (20%)",
+        supportScore: "Support (15%)", securityScore: "Security (10%)", easeScore: "Ease of use (5%)",
+        scalabilityScore: "Scalability (3%)", devScore: "Developer features (2%)"
+      };
+      const factorRows = FACTORS.map(f =>
+        `<tr class="cmp-factor" hidden><td class="cmp-rowlabel">${FACTOR_LABELS[f.key]}</td>${set.map((v, i) => {
+          const bi = bestIdx(set, x => x[f.key], "high");
+          return `<td class="${i === wi ? "is-winner" : ""} ${i === bi ? "is-best" : ""}">${typeof v[f.key] === "number" ? v[f.key] + "/100" : "—"}</td>`;
+        }).join("")}</tr>`).join("");
+      return verdict + `
+        <div class="table-scroll">
+          <table class="cmp-grid">
+            <thead><tr><th></th>${headCols}</tr></thead>
+            <tbody>
+              ${defaultRows}
+              <tr><td colspan="${set.length + 1}" style="text-align:left"><button class="btn btn--ghost btn--sm" id="cmp-showall">Show all 8 factors ▾</button></td></tr>
+              ${factorRows}
+            </tbody>
+          </table>
+        </div>`;
+    }
+
+    function openCompareModal() {
+      const set = shortlist.map(findV).filter(v => v && v.status === "active");
+      if (set.length < 2) return;
+      $("#cmp-modal-body").innerHTML = buildCompareHTML(set);
+      const modal = $("#compare-modal");
+      modal.removeAttribute("hidden"); modal.classList.add("show");
+      document.body.classList.add("modal-open");
+      const showAll = $("#cmp-showall");
+      if (showAll) showAll.addEventListener("click", () => {
+        const rows = $$("#compare-modal .cmp-factor");
+        const open = rows.length && !rows[0].hasAttribute("hidden");
+        rows.forEach(r => open ? r.setAttribute("hidden", "") : r.removeAttribute("hidden"));
+        showAll.textContent = open ? "Show all 8 factors ▾" : "Hide extra factors ▴";
+      });
+      const closeBtn = modal.querySelector(".cmp-modal__close");
+      if (closeBtn) closeBtn.focus();
+    }
+    function closeCompareModal() {
+      const modal = $("#compare-modal");
+      modal.classList.remove("show"); modal.setAttribute("hidden", "");
+      document.body.classList.remove("modal-open");
+    }
+
+    /* ---- event wiring ---- */
+    function wireDecisionEngine() {
+      // toggles: buttons (click) + checkboxes (change), event-delegated
+      document.addEventListener("click", e => {
+        const btn = e.target.closest("button[data-compare-toggle]");
+        if (btn && !btn.classList.contains("is-disabled")) { toggleShortlist(btn.getAttribute("data-compare-toggle")); }
+        const rm = e.target.closest("[data-remove]");
+        if (rm) removeFromShortlist(rm.getAttribute("data-remove"));
+        if (e.target.closest("[data-close]")) closeCompareModal();
+      });
+      document.addEventListener("change", e => {
+        const cb = e.target.closest("input[data-compare-toggle]");
+        if (cb) toggleShortlist(cb.getAttribute("data-compare-toggle"));
+      });
+      $("#tray-clear").addEventListener("click", clearShortlist);
+      $("#tray-compare").addEventListener("click", openCompareModal);
+      document.addEventListener("keydown", e => { if (e.key === "Escape") closeCompareModal(); });
+      window.addEventListener("resize", () => {
+        if (shortlist.length > maxSel()) { shortlist = shortlist.slice(0, maxSel()); saveShortlist(); }
+        syncCompareUI();
+      });
+    }
+
+    /* ── init ── */
+    loadShortlist();
+    renderScorecards();
+    renderTable();
+    wireDecisionEngine();
+    syncCompareUI();
+  })();
+  </script>
+</body>
+</html>

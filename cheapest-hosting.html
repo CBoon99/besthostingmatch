@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheapest Web Hosting 2026 | Best Hosting Match</title>
+  <meta name="description" content="The cheapest web hosting in 2026 ranked by True 3-Year Cost, not just the headline intro price. Find genuinely low-cost hosting that stays cheap at renewal.">
+  <link rel="canonical" href="https://besthostingmatch.com/cheapest-hosting">
+  <meta property="og:title" content="Cheapest Web Hosting 2026 — Ranked by Real Cost">
+  <meta property="og:description" content="Cheapest hosting ranked by True 3-Year Cost, not just the intro price.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://besthostingmatch.com/cheapest-hosting">
+  <meta property="og:image" content="https://besthostingmatch.com/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script>(function(){try{var t=localStorage.getItem('hosting-theme');if(!t)t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="wrap nav__inner">
+    <a href="/" class="nav__logo"><span class="nav__logo-mark">H</span> Best Hosting Match</a>
+    <div class="nav__links">
+      <a href="/#compare" class="hide-m">Compare</a>
+      <a href="/#guides" class="hide-m">Guides</a>
+      <a href="/#scorecards" class="hide-m">Reviews</a>
+      <a href="/methodology" class="hide-m">Methodology</a>
+      <a href="/about" class="hide-m">About</a>
+      <button class="theme-toggle" id="tt" aria-label="Toggle theme">🌙</button>
+      <a href="/#quiz-section" class="btn btn--primary btn--sm">Start matching →</a>
+    </div>
+  </div></nav>
+
+  <section class="page-hero"><div class="wrap narrow">
+    <div class="crumb"><a href="/">Home</a> › Cheapest Hosting</div>
+    <h1>The cheapest web hosting in <span class="accent">2026</span></h1>
+    <p class="lead">Ranked by what you'll <em>actually</em> pay over three years — not the headline intro price that triples at renewal. The cheapest sticker isn't always the cheapest host.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="callout"><strong>Our ranking rule:</strong> we sort by <a href="/hosting-renewal-price-comparison">True 3-Year Cost</a> = (entry × 12) + (renewal × 24). A host with a slightly higher intro price but an honest renewal often beats a $0.99 teaser that jumps to $10/mo.</div>
+
+    <h2>Cheapest hosting by real 3-year cost</h2>
+    <div class="cards" id="cheap-cards"></div>
+
+    <h2>Full budget comparison</h2>
+    <div class="table-scroll">
+      <table class="cmp">
+        <thead><tr><th>Provider</th><th>Entry</th><th>Renewal</th><th>True 3-Yr Cost</th><th>Free domain</th><th>Visit</th></tr></thead>
+        <tbody id="cheap-body"></tbody>
+      </table>
+    </div>
+
+    <h2>How to actually get the cheapest hosting</h2>
+    <ul class="checklist">
+      <li><strong>Buy the longest term.</strong> The intro price usually only applies if you pay 2–4 years upfront. It delays the renewal jump too.</li>
+      <li><strong>Check the renewal, always.</strong> A $1.99 host that renews at $11.99 costs more over three years than a $2.99 host that renews at $4.95.</li>
+      <li><strong>Skip the add-ons at checkout.</strong> Site backups, "SEO tools", and premium support upsells inflate the bill. Most you don't need.</li>
+      <li><strong>Use the money-back guarantee.</strong> DreamHost gives 97 days, InMotion 90 — plenty of time to test before committing.</li>
+    </ul>
+
+    <div class="note">Cheap but need it to be beginner-friendly too? See <a href="/best-hosting-for-beginners">best hosting for beginners</a>. Building on WordPress? Our <a href="/best-wordpress-hosting">WordPress hosting guide</a> covers budget-friendly managed options.</div>
+  </div></section>
+
+  <footer class="footer"><div class="wrap">
+    <div class="footer__network">🔗 Part of the Best Match network — compare <a href="https://bestvpsmatch.com">VPS providers</a> or <a href="https://bestvpnmatch.com">VPNs</a> too.</div>
+    <div class="footer__bottom">© 2026 Best Hosting Match — Independent editorial. No paid placement. · <a href="/privacy">Privacy &amp; legal</a></div>
+  </div></footer>
+
+  <script src="/data/site-config.js"></script>
+  <script src="/data/scoring.js"></script>
+  <script src="/data/hosting-data.js"></script>
+  <script>
+  (function(){
+    var tt=document.getElementById('tt');
+    function sync(){tt.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️':'🌙';}
+    sync();
+    tt.addEventListener('click',function(){var d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');localStorage.setItem('hosting-theme','light');}else{document.documentElement.setAttribute('data-theme','dark');localStorage.setItem('hosting-theme','dark');}sync();});
+
+    var money=function(n){return '$'+Number(n).toFixed(2);};
+    var moneyR=function(n){return '$'+Math.round(n).toLocaleString();};
+    // budget pool: entry under $6, sorted by true 3yr cost
+    var budget=HOSTINGS.filter(function(v){return v.entryPrice<6;}).sort(function(a,b){return a.trueThreeYearCost-b.trueThreeYearCost;});
+    var top=budget.slice(0,6);
+    document.getElementById('cheap-cards').innerHTML=top.map(function(v,i){
+      return '<div class="card">'
+        +'<div class="card__rank">#'+(i+1)+' cheapest</div>'
+        +'<div class="card__head"><span class="card__icon">'+v.logoIcon+'</span><span class="card__name">'+v.name+'</span><span class="card__score">'+v.weightedScore+'<small>/100</small></span></div>'
+        +'<p class="card__tagline">'+v.tagline+'</p>'
+        +'<div class="card__metrics">'
+          +'<div><span class="l">Entry price</span><span class="v price-entry">'+money(v.entryPrice)+'/mo</span></div>'
+          +'<div><span class="l">Renewal</span><span class="v price-renewal">'+money(v.renewalPrice)+'/mo</span></div>'
+          +'<div><span class="l">True 3-yr cost</span><span class="v true-cost">'+moneyR(v.trueThreeYearCost)+'</span></div>'
+          +'<div><span class="l">Money-back</span><span class="v">'+v.moneyBackGuarantee+'</span></div>'
+        +'</div>'
+        +'<div class="card__cta"><a href="'+v.affiliateLink+'" target="_blank" rel="'+outboundRel()+'" class="btn btn--primary btn--sm">Visit site →</a></div>'
+        +'</div>';
+    }).join('');
+    document.getElementById('cheap-body').innerHTML=budget.map(function(v){
+      return '<tr>'
+        +'<td><strong>'+v.logoIcon+' '+v.name+'</strong></td>'
+        +'<td class="price-entry" style="font-weight:700">'+money(v.entryPrice)+'</td>'
+        +'<td class="price-renewal" style="font-weight:700">'+money(v.renewalPrice)+'</td>'
+        +'<td class="true-cost" style="font-weight:800">'+moneyR(v.trueThreeYearCost)+'</td>'
+        +'<td>'+(v.freeDomain?'✅':'—')+'</td>'
+        +'<td><a href="'+v.affiliateLink+'" target="_blank" rel="'+outboundRel()+'" class="btn btn--primary btn--sm">Visit →</a></td>'
+        +'</tr>';
+    }).join('');
+  })();
+  </script>
+</body>
+</html>

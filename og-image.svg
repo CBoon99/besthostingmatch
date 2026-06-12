@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect width="8" height="630" fill="#f97316"/>
+
+  <!-- Logo: overlapping cards + check -->
+  <g transform="translate(80,60)">
+    <rect x="0"  y="6"  width="42" height="56" rx="10" fill="#ffffff" stroke="#fdba74" stroke-width="4"/>
+    <rect x="22" y="14" width="42" height="56" rx="10" fill="#f97316"/>
+    <path d="M34 44 l8 8 l14 -16" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="168" y="92" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#0f172a">Best</text>
+  <text x="168" y="124" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" fill="#f97316">Hosting Match</text>
+
+  <!-- Headline -->
+  <text x="80" y="244" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#0f172a">Stop overpaying for hosting.</text>
+  <text x="80" y="312" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#f97316">We show the renewal price.</text>
+
+  <text x="80" y="370" font-family="Inter,Arial,sans-serif" font-size="26" fill="#475569">22 providers · 8 factors · One honest answer · No paid rankings</text>
+
+  <!-- Factor pills -->
+  <rect x="80"  y="416" width="186" height="56" rx="28" fill="rgba(249,115,22,0.15)"/>
+  <text x="173" y="451" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#fb923c" text-anchor="middle">Performance</text>
+  <rect x="286" y="416" width="150" height="56" rx="28" fill="rgba(16,185,129,0.15)"/>
+  <text x="361" y="451" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#34d399" text-anchor="middle">Uptime</text>
+  <rect x="456" y="416" width="200" height="56" rx="28" fill="rgba(59,130,246,0.15)"/>
+  <text x="556" y="451" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#60a5fa" text-anchor="middle">Real 3-yr cost</text>
+
+  <!-- Highlight strip -->
+  <rect x="80" y="520" width="520" height="60" rx="12" fill="#161b22" stroke="#2a323d"/>
+  <text x="104" y="558" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="600" fill="#f4f6fb">We show the renewal price — not just the intro rate</text>
+
+  <text x="1120" y="600" font-family="Inter,Arial,sans-serif" font-size="22" fill="#7d8896" text-anchor="end">besthostingmatch.com</text>
+</svg>

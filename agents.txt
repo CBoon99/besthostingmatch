@@ -1,0 +1,23 @@
+# Best Hosting Match — Agent Discovery
+# https://besthostingmatch.com
+
+Purpose: Independent web hosting comparison. 22 providers scored across 8 weighted factors
+using public, verifiable data. Serves beginners and professionals via progressive disclosure.
+
+Scoring weights: Performance 25%, Uptime 20%, Price/Value 20%, Support 15%,
+Security 10%, Ease of Use 5%, Scalability 3%, Developer Features 2%.
+
+Top providers (2026): Kinsta 89, Cloudways 89, SiteGround 88, Hostinger 87,
+DigitalOcean 87, Vultr 87.
+
+Categories: shared, managed WordPress, cloud, VPS, dedicated.
+
+Unique data point: "True 3-Year Cost" = (entry price x 12) + (renewal price x 24).
+Exposes renewal-price increases that headline pricing hides.
+
+Structured data: https://besthostingmatch.com/data/hosting-comparison-2026.json
+Methodology: https://besthostingmatch.com/methodology
+Editorial policy: Scores based on published specs, SLAs, and public benchmark data.
+No first-person lab tests. No paid placement.
+
+Network: bestvpnmatch.com (VPNs), bestvpsmatch.com (VPS).

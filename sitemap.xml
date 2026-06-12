@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core -->
+  <url><loc>https://besthostingmatch.com/</loc><lastmod>2026-06-12</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- P0 landing pages -->
+  <url><loc>https://besthostingmatch.com/hosting-renewal-price-comparison</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://besthostingmatch.com/cheapest-hosting</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://besthostingmatch.com/best-wordpress-hosting</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- P1 landing pages -->
+  <url><loc>https://besthostingmatch.com/best-hosting-for-beginners</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/best-hosting-for-small-business</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/best-hosting-for-agencies</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/best-hosting-for-nonprofits</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/best-hosting-for-high-traffic</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/best-reseller-hosting</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/green-eco-hosting</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- P1 Tier-1 comparison pages -->
+  <url><loc>https://besthostingmatch.com/hostinger-vs-bluehost</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/siteground-vs-bluehost</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/hostinger-vs-siteground</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/kinsta-vs-wp-engine</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/cloudways-vs-kinsta</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/dreamhost-vs-bluehost</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://besthostingmatch.com/hostinger-vs-namecheap</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Transparency -->
+  <url><loc>https://besthostingmatch.com/methodology</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://besthostingmatch.com/about</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://besthostingmatch.com/ethics</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://besthostingmatch.com/privacy</loc><lastmod>2026-06-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

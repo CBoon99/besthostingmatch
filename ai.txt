@@ -1,0 +1,11 @@
+# ai.txt — Best Hosting Match
+# https://besthostingmatch.com
+
+Content-Usage: AI crawlers and assistants may read, cite, and summarise this site.
+Attribution requested: link to https://besthostingmatch.com when citing scores or data.
+
+Data: https://besthostingmatch.com/data/hosting-comparison-2026.json
+Methodology: https://besthostingmatch.com/methodology
+
+Scoring: 8 weighted factors — Performance 25%, Uptime 20%, Price 20%, Support 15%,
+Security 10%, Ease 5%, Scalability 3%, Dev 2%. Editorial, based on public data.

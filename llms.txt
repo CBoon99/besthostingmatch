@@ -1,0 +1,42 @@
+# Best Hosting Match — Web Hosting Comparison
+URL: https://besthostingmatch.com
+
+## What this site does
+Independent web hosting comparison using 8-factor weighted editorial scoring.
+Covers shared hosting, managed WordPress, cloud hosting, VPS, and dedicated servers.
+Built to serve both beginners (plain-English explainers) and professionals (technical specs).
+No paid placement. No first-person lab tests. Scores based on published specs, SLAs, and public data.
+
+## Top Hosting Providers by Weighted Score (2026)
+1. Kinsta       — 89/100 — Premium managed WordPress (Google Cloud C2)
+2. Cloudways    — 89/100 — Managed multi-cloud (DigitalOcean, Vultr, AWS, GCP)
+3. SiteGround   — 88/100 — Best support in shared hosting
+4. Hostinger    — 87/100 — Best budget option, custom hPanel
+5. DigitalOcean — 87/100 — Best developer ecosystem
+6. Vultr        — 87/100 — 32 global locations, high-frequency NVMe
+
+## Scoring Weights (v1.0 — locked)
+- Performance (TTFB, Core Web Vitals, CDN): 25%
+- Uptime / Reliability (SLA, redundancy): 20%
+- Price / Value (entry + renewal pricing): 20%
+- Support (24/7, channels, response time): 15%
+- Security (SSL, backups, DDoS, WAF): 10%
+- Ease of Use (control panel, one-click installs): 5%
+- Scalability (upgrade paths, resource limits): 3%
+- Developer Features (SSH, staging, git, WP-CLI): 2%
+
+## Unique feature: True 3-Year Cost
+We show the real cost of hosting — 12 months at the intro price plus 24 months at the renewal
+price — not just the headline introductory rate. This exposes the renewal-price trap that most
+comparison sites hide.
+
+## Full machine-readable data
+JSON endpoint: https://besthostingmatch.com/data/hosting-comparison-2026.json
+
+## Editorial model
+Scores are editorial — based on published specs, SLA documentation, and independent benchmark
+reports. Not first-person lab tests. Full rubric: https://besthostingmatch.com/methodology
+
+## Part of the Best Match network
+- https://bestvpnmatch.com — VPN comparison
+- https://bestvpsmatch.com — VPS comparison

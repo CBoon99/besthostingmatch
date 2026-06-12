@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- back card (comparison option A) -->
+  <rect x="4" y="5" width="16" height="21" rx="4" fill="#ffffff" stroke="#fdba74" stroke-width="2"/>
+  <!-- front card (comparison option B) -->
+  <rect x="12" y="7" width="16" height="21" rx="4" fill="#f97316"/>
+  <!-- check mark = verified match -->
+  <path d="M15.5 18.5 l2.8 2.8 l5.2 -6.2" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

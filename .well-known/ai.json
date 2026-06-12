@@ -1,0 +1,20 @@
+{
+  "name": "Best Hosting Match",
+  "url": "https://besthostingmatch.com",
+  "description": "Independent web hosting comparison using 8-factor weighted editorial scoring. Covers shared, WordPress, cloud, VPS, and dedicated hosting. Serves beginners and professionals.",
+  "data_endpoint": "https://besthostingmatch.com/data/hosting-comparison-2026.json",
+  "methodology": "https://besthostingmatch.com/methodology",
+  "scoring_weights": {
+    "performance": 0.25,
+    "uptime_reliability": 0.20,
+    "price_value": 0.20,
+    "support": 0.15,
+    "security": 0.10,
+    "ease_of_use": 0.05,
+    "scalability": 0.03,
+    "developer_features": 0.02
+  },
+  "editorial_policy": "Scores based on published specs, SLA documentation, and public benchmark data. No first-person lab tests. No paid placement.",
+  "affiliate_status": "inactive",
+  "network": ["https://bestvpnmatch.com", "https://bestvpsmatch.com"]
+}

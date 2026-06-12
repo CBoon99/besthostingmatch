@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethics — Best Hosting Match</title>
+  <meta name="description" content="The editorial rules Best Hosting Match operates by: no paid rankings, transparent renewal pricing, clear affiliate disclosure, no fake urgency.">
+  <link rel="canonical" href="https://besthostingmatch.com/ethics">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script>(function(){try{var t=localStorage.getItem('hosting-theme');if(!t)t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="wrap nav__inner">
+    <a href="/" class="nav__logo"><span class="nav__logo-mark">H</span> Best Hosting Match</a>
+    <div class="nav__links">
+      <a href="/#compare" class="hide-m">Compare</a>
+      <a href="/#guides" class="hide-m">Guides</a>
+      <a href="/#scorecards" class="hide-m">Reviews</a>
+      <a href="/methodology" class="hide-m">Methodology</a>
+      <a href="/about" class="hide-m">About</a>
+      <button class="theme-toggle" id="tt" aria-label="Toggle theme">🌙</button>
+      <a href="/#quiz-section" class="btn btn--primary btn--sm">Start matching →</a>
+    </div>
+  </div></nav>
+
+  <section class="page-hero"><div class="wrap narrow">
+    <div class="crumb"><a href="/">Home</a> › Ethics</div>
+    <h1>Our editorial ethics</h1>
+    <p class="lead">Six rules we operate by. They're here so you can hold us to them.</p>
+  </div></section>
+
+  <section><div class="wrap narrow">
+    <h2>The six rules</h2>
+    <ol>
+      <li><strong>Scores are never for sale.</strong> No provider can pay to raise a score or ranking. Scores follow the <a href="/methodology">methodology</a>, full stop.</li>
+      <li><strong>Renewal prices are always shown.</strong> We display the renewal rate and the True 3-Year Cost alongside every headline price. No hiding the real cost.</li>
+      <li><strong>Affiliate links are always disclosed.</strong> When affiliate partnerships go live, every sponsored link is marked, and the relationship is disclosed here and on the <a href="/about">about page</a>.</li>
+      <li><strong>No fake urgency.</strong> No countdown timers, no "only 3 spots left", no manufactured scarcity. Ever.</li>
+      <li><strong>We don't claim to lab-test.</strong> Scores are editorial, based on published specs and SLAs. We never pretend to have personally benchmarked servers we didn't.</li>
+      <li><strong>We collect no personal data.</strong> No email capture, no newsletter traps, no forms that harvest your information.</li>
+    </ol>
+
+    <h2>Affiliate disclosure</h2>
+    <div class="callout"><strong>Current status: no affiliate links active.</strong> Every outbound link goes directly to the provider's official homepage. The site earns nothing right now.</div>
+    <p>When affiliate programs are approved, this section will list each partner and its disclosure. Affiliate status will never influence scoring — the architecture separates the two completely. A provider we earn commission from gets exactly the same scoring treatment as one we don't.</p>
+
+    <h2>Version log</h2>
+    <table class="data-table">
+      <thead><tr><th>Version</th><th>Date</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td>1.0</td><td>12 Jun 2026</td><td>Initial scoring rubric locked — 8 factors, weights as published.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Corrections</h2>
+    <p>If a score or fact is wrong or out of date, it gets fixed and the change dated. Our underlying data is openly published as a <a href="/data/hosting-comparison-2026.json">JSON endpoint</a> so anyone can audit it.</p>
+  </div></section>
+
+  <footer class="footer"><div class="wrap">
+    <div class="footer__network">🔗 Part of the Best Match network — compare <a href="https://bestvpsmatch.com">VPS providers</a> or <a href="https://bestvpnmatch.com">VPNs</a> too.</div>
+    <div class="footer__bottom">© 2026 Best Hosting Match — Independent editorial. No paid placement. · <a href="/privacy">Privacy &amp; legal</a></div>
+  </div></footer>
+
+  <script>
+    var tt=document.getElementById('tt');
+    function sync(){tt.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️':'🌙';}
+    sync();
+    tt.addEventListener('click',function(){var d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');localStorage.setItem('hosting-theme','light');}else{document.documentElement.setAttribute('data-theme','dark');localStorage.setItem('hosting-theme','dark');}sync();});
+  </script>
+</body>
+</html>

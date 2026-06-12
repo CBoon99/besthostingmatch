@@ -1,0 +1,30 @@
+# Clean URLs — Netlify 200 rewrites (extensionless)
+
+# Transparency
+/methodology                          /methodology.html                          200
+/about                                /about.html                                200
+/ethics                               /ethics.html                               200
+/privacy                              /privacy.html                              200
+
+# P0 landing pages
+/hosting-renewal-price-comparison     /hosting-renewal-price-comparison.html     200
+/cheapest-hosting                     /cheapest-hosting.html                     200
+/best-wordpress-hosting               /best-wordpress-hosting.html               200
+
+# P1 landing pages
+/best-hosting-for-beginners           /best-hosting-for-beginners.html           200
+/best-hosting-for-small-business      /best-hosting-for-small-business.html      200
+/best-hosting-for-agencies            /best-hosting-for-agencies.html            200
+/best-hosting-for-nonprofits          /best-hosting-for-nonprofits.html          200
+/best-hosting-for-high-traffic        /best-hosting-for-high-traffic.html        200
+/best-reseller-hosting                /best-reseller-hosting.html                200
+/green-eco-hosting                    /green-eco-hosting.html                    200
+
+# P1 Tier-1 comparison pages
+/hostinger-vs-bluehost                /hostinger-vs-bluehost.html                200
+/siteground-vs-bluehost               /siteground-vs-bluehost.html               200
+/hostinger-vs-siteground              /hostinger-vs-siteground.html              200
+/kinsta-vs-wp-engine                  /kinsta-vs-wp-engine.html                  200
+/cloudways-vs-kinsta                  /cloudways-vs-kinsta.html                  200
+/dreamhost-vs-bluehost                /dreamhost-vs-bluehost.html                200
+/hostinger-vs-namecheap               /hostinger-vs-namecheap.html               200

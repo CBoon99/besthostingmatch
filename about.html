@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Best Hosting Match</title>
+  <meta name="description" content="Best Hosting Match is an independent web hosting comparison site. No paid placement, no first-person lab tests — editorial scoring based on public data.">
+  <link rel="canonical" href="https://besthostingmatch.com/about">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script>(function(){try{var t=localStorage.getItem('hosting-theme');if(!t)t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="wrap nav__inner">
+    <a href="/" class="nav__logo"><span class="nav__logo-mark">H</span> Best Hosting Match</a>
+    <div class="nav__links">
+      <a href="/#compare" class="hide-m">Compare</a>
+      <a href="/#guides" class="hide-m">Guides</a>
+      <a href="/#scorecards" class="hide-m">Reviews</a>
+      <a href="/methodology" class="hide-m">Methodology</a>
+      <a href="/about" class="hide-m">About</a>
+      <button class="theme-toggle" id="tt" aria-label="Toggle theme">🌙</button>
+      <a href="/#quiz-section" class="btn btn--primary btn--sm">Start matching →</a>
+    </div>
+  </div></nav>
+
+  <section class="page-hero"><div class="wrap narrow">
+    <div class="crumb"><a href="/">Home</a> › About</div>
+    <h1>About Best Hosting Match</h1>
+    <p class="lead">An independent web hosting comparison built to serve beginners and professionals at the same time — without the paid-placement games that plague this industry.</p>
+  </div></section>
+
+  <section><div class="wrap narrow">
+    <h2>Why this exists</h2>
+    <p>Most "best hosting" lists are ranked by who pays the highest affiliate commission, not by who's actually best. Renewal prices are hidden. Beginners get drowned in jargon; professionals get patronised with oversimplified fluff.</p>
+    <p>Best Hosting Match does it differently: one transparent scoring system, applied equally to all 22 providers, with the renewal-price trap shown front and centre via our <a href="/hosting-renewal-price-comparison">True 3-Year Cost</a>.</p>
+
+    <h2>The dual-audience promise</h2>
+    <p>Every page works two ways. Beginners see plain-English explanations, price focus, and simple recommendations. Professionals can toggle the "Pro view" to reveal uptime SLAs, server specs, and developer tools. Tooltips explain every metric. Nobody is left out.</p>
+
+    <h2>How we make money</h2>
+    <div class="callout"><strong>Right now: nothing.</strong> At launch there are no affiliate links. Every "Visit site" button links directly to the provider's official homepage. We're building trust first.</div>
+    <p>When we do add affiliate partnerships, every sponsored link will be clearly marked, disclosed on this page and in our <a href="/ethics">ethics policy</a>, and — critically — it will <em>never</em> change a score or ranking. Scores are locked to the methodology, not to commission rates.</p>
+
+    <h2>Who runs it</h2>
+    <p>Best Hosting Match is run independently by Carl Boon. It's part of a small network of independent comparison sites — alongside <a href="https://bestvpnmatch.com">Best VPN Match</a> and <a href="https://bestvpsmatch.com">Best VPS Match</a> — built on the same honest, editorial-first principles.</p>
+
+    <h2>Accuracy</h2>
+    <p>Scores are editorial and defensible, not absolute. Hosting changes fast — prices shift, features get added, SLAs change. We re-verify regularly and date every update. If you spot something out of date, the data is openly published as a <a href="/data/hosting-comparison-2026.json">JSON endpoint</a> so it can be checked.</p>
+  </div></section>
+
+  <footer class="footer"><div class="wrap">
+    <div class="footer__network">🔗 Part of the Best Match network — compare <a href="https://bestvpsmatch.com">VPS providers</a> or <a href="https://bestvpnmatch.com">VPNs</a> too.</div>
+    <div class="footer__bottom">© 2026 Best Hosting Match — Independent editorial. No paid placement. · <a href="/privacy">Privacy &amp; legal</a></div>
+  </div></footer>
+
+  <script>
+    var tt=document.getElementById('tt');
+    function sync(){tt.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️':'🌙';}
+    sync();
+    tt.addEventListener('click',function(){var d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');localStorage.setItem('hosting-theme','light');}else{document.documentElement.setAttribute('data-theme','dark');localStorage.setItem('hosting-theme','dark');}sync();});
+  </script>
+</body>
+</html>
