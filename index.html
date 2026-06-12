@@ -182,7 +182,6 @@
     .hero__ctas { display: flex; gap: 0.7rem; flex-wrap: wrap; margin-top: 1.5rem; }
     .hero__trust { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: 1.4rem; font-size: 0.82rem; color: var(--text-muted); }
     .hero__art { display: grid; place-items: center; }
-    .hero__art svg { width: 100%; max-width: 360px; height: auto; }
     @media (max-width: 860px) {
       .hero__grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.2rem; }
@@ -202,13 +201,34 @@
     .proof-row .it .ic { color: var(--accent); }
     .proof-row .sep { color: var(--border); }
     @media (max-width: 520px) { .proof-row .sep { display: none; } }
-    /* hero right: server visual + floating checklist */
-    .hero__art { position: relative; }
-    .server-visual { width: 100%; max-width: 420px; height: auto; display: block; }
+    /* hero right: server photo + floating checklist overlay */
+    .hero__art { position: relative; width: 100%; display: flex; justify-content: flex-end; }
+    .hero__photo-wrap {
+      position: relative; width: 100%; max-width: 540px;
+    }
+    .hero__photo-wrap::after {
+      content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: var(--radius-lg);
+      background: linear-gradient(to right, var(--bg-dark) 0%, transparent 38%);
+    }
+    .server-visual {
+      width: 100%; height: auto; display: block;
+      object-fit: cover; border-radius: var(--radius-lg);
+      aspect-ratio: 1024 / 610;
+      box-shadow: var(--shadow);
+    }
     .check-panel {
-      position: absolute; top: 50%; right: -6px; transform: translateY(-50%);
-      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);
-      padding: 1.1rem 1.25rem; box-shadow: var(--shadow); min-width: 168px;
+      position: absolute; top: 50%; right: -6px; transform: translateY(-50%); z-index: 3;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.7); border-radius: var(--radius-lg);
+      padding: 1.1rem 1.25rem;
+      box-shadow: 0 16px 48px rgba(20, 24, 31, 0.18), 0 0 0 1px rgba(20, 24, 31, 0.06);
+      min-width: 168px;
+    }
+    [data-theme="dark"] .check-panel {
+      background: rgba(22, 27, 34, 0.9);
+      border-color: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.06);
     }
     .check-panel__title { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.7rem; }
     .check-list { display: grid; gap: 0.5rem; }
@@ -566,44 +586,9 @@
         </div>
       </div>
       <div class="hero__art">
-        <svg class="server-visual" viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isometric hosting server stack">
-          <defs>
-            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-              <stop offset="0" stop-color="#f97316" stop-opacity="0.22"/>
-              <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f3ec"/></linearGradient>
-          </defs>
-          <ellipse cx="210" cy="372" rx="170" ry="40" fill="url(#glow)"/>
-          <!-- platform -->
-          <polygon points="70,290 210,360 210,378 70,308" fill="#e6ded1"/>
-          <polygon points="210,360 350,290 350,308 210,378" fill="#ddd4c5"/>
-          <polygon points="210,360 350,290 210,220 70,290" fill="#f1ece3"/>
-          <!-- unit A (bottom) -->
-          <polygon points="100,245 210,300 210,326 100,271" fill="#efe8dd"/>
-          <polygon points="210,300 320,245 320,271 210,326" fill="#e6ddcf"/>
-          <polygon points="210,300 320,245 210,190 100,245" fill="url(#top)" stroke="#ece5da"/>
-          <line x1="210" y1="300" x2="210" y2="326" stroke="#f97316" stroke-width="2"/>
-          <circle cx="238" cy="288" r="3.4" fill="#f97316"/><circle cx="252" cy="281" r="3.4" fill="#fdba74"/><circle cx="266" cy="274" r="3.4" fill="#10b981"/>
-          <!-- unit B -->
-          <polygon points="100,203 210,258 210,284 100,229" fill="#efe8dd"/>
-          <polygon points="210,258 320,203 320,229 210,284" fill="#e6ddcf"/>
-          <polygon points="210,258 320,203 210,148 100,203" fill="url(#top)" stroke="#ece5da"/>
-          <line x1="210" y1="258" x2="210" y2="284" stroke="#f97316" stroke-width="2"/>
-          <circle cx="238" cy="246" r="3.4" fill="#f97316"/><circle cx="252" cy="239" r="3.4" fill="#fdba74"/><circle cx="266" cy="232" r="3.4" fill="#10b981"/>
-          <!-- unit C -->
-          <polygon points="100,161 210,216 210,242 100,187" fill="#efe8dd"/>
-          <polygon points="210,216 320,161 320,187 210,242" fill="#e6ddcf"/>
-          <polygon points="210,216 320,161 210,106 100,161" fill="url(#top)" stroke="#ece5da"/>
-          <line x1="210" y1="216" x2="210" y2="242" stroke="#f97316" stroke-width="2"/>
-          <circle cx="238" cy="204" r="3.4" fill="#f97316"/><circle cx="252" cy="197" r="3.4" fill="#fdba74"/><circle cx="266" cy="190" r="3.4" fill="#10b981"/>
-          <!-- unit D (top) -->
-          <polygon points="100,119 210,174 210,200 100,145" fill="#efe8dd"/>
-          <polygon points="210,174 320,119 320,145 210,200" fill="#e6ddcf"/>
-          <polygon points="210,174 320,119 210,64 100,119" fill="url(#top)" stroke="#ece5da"/>
-          <line x1="210" y1="174" x2="210" y2="200" stroke="#f97316" stroke-width="2"/>
-          <circle cx="238" cy="162" r="3.4" fill="#f97316"/><circle cx="252" cy="155" r="3.4" fill="#fdba74"/><circle cx="266" cy="148" r="3.4" fill="#10b981"/>
-        </svg>
+        <div class="hero__photo-wrap">
+          <img class="server-visual" src="assets/hero-hosting.png" alt="Server racks in a modern data centre" width="1024" height="610" loading="eager">
+        </div>
         <div class="check-panel">
           <div class="check-panel__title">What we score</div>
           <div class="check-list">
